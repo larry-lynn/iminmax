@@ -1,0 +1,406 @@
+Changing working directory to that of main program
+Processing File:  ../../csci540_data/16Dimension10cluster1000Points.csv
+##########
+Tree Build Time (in seconds): 0.001614
+Index Build Time (in seconds) [includes tree build time]: 0.037595
+Tree statistics: 
+Items:1000
+Nodes:77
+Leaves:71
+InnerNodes:6
+Levels:3
+Average Fill:0.670691
+
+Done Processing File:  ../../csci540_data/16Dimension10cluster1000Points.csv
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/16Dimension10cluster10000Points.csv
+##########
+Tree Build Time (in seconds): 0.018477
+Index Build Time (in seconds) [includes tree build time]: 0.388178
+Tree statistics: 
+Items:10000
+Nodes:724
+Leaves:673
+InnerNodes:51
+Levels:4
+Average Fill:0.707564
+
+Done Processing File:  ../../csci540_data/16Dimension10cluster10000Points.csv
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/16Dimension10cluster100000Points.csv
+##########
+Tree Build Time (in seconds): 0.206325
+Index Build Time (in seconds) [includes tree build time]: 3.88941
+Tree statistics: 
+Items:100000
+Nodes:7662
+Leaves:7156
+InnerNodes:506
+Levels:5
+Average Fill:0.665442
+
+Done Processing File:  ../../csci540_data/16Dimension10cluster100000Points.csv
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/64Dimension10cluster1000Points.csv
+##########
+Tree Build Time (in seconds): 0.001676
+Index Build Time (in seconds) [includes tree build time]: 0.101831
+Tree statistics: 
+Items:1000
+Nodes:78
+Leaves:72
+InnerNodes:6
+Levels:3
+Average Fill:0.661376
+
+Done Processing File:  ../../csci540_data/64Dimension10cluster1000Points.csv
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/64Dimension10cluster10000Points.csv
+##########
+Tree Build Time (in seconds): 0.019482
+Index Build Time (in seconds) [includes tree build time]: 1.03042
+Tree statistics: 
+Items:10000
+Nodes:738
+Leaves:686
+InnerNodes:52
+Levels:4
+Average Fill:0.694155
+
+Done Processing File:  ../../csci540_data/64Dimension10cluster10000Points.csv
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/64Dimension10cluster100000Points.csv
+##########
+Tree Build Time (in seconds): 0.215214
+Index Build Time (in seconds) [includes tree build time]: 10.2329
+Tree statistics: 
+Items:100000
+Nodes:7300
+Leaves:6824
+InnerNodes:476
+Levels:5
+Average Fill:0.697817
+
+Done Processing File:  ../../csci540_data/64Dimension10cluster100000Points.csv
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/256Dimension10cluster1000Points.csv
+##########
+Tree Build Time (in seconds): 0.001612
+Index Build Time (in seconds) [includes tree build time]: 0.349238
+Tree statistics: 
+Items:1000
+Nodes:79
+Leaves:74
+InnerNodes:5
+Levels:3
+Average Fill:0.643501
+
+Done Processing File:  ../../csci540_data/256Dimension10cluster1000Points.csv
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/256Dimension10cluster10000Points.csv
+##########
+Tree Build Time (in seconds): 0.01862
+Index Build Time (in seconds) [includes tree build time]: 3.56198
+Tree statistics: 
+Items:10000
+Nodes:748
+Leaves:695
+InnerNodes:53
+Levels:4
+Average Fill:0.685166
+
+Done Processing File:  ../../csci540_data/256Dimension10cluster10000Points.csv
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/256Dimension10cluster100000Points.csv
+##########
+Tree Build Time (in seconds): 0.209724
+Index Build Time (in seconds) [includes tree build time]: 35.4672
+Tree statistics: 
+Items:100000
+Nodes:7261
+Leaves:6776
+InnerNodes:485
+Levels:5
+Average Fill:0.70276
+
+Done Processing File:  ../../csci540_data/256Dimension10cluster100000Points.csv
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/uniform/uniform_16_1000.txt
+##########
+Tree Build Time (in seconds): 0.001617
+Index Build Time (in seconds) [includes tree build time]: 0.038267
+Tree statistics: 
+Items:1000
+Nodes:72
+Leaves:67
+InnerNodes:5
+Levels:3
+Average Fill:0.710732
+
+Done Processing File:  ../../csci540_data/uniform/uniform_16_1000.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/uniform/uniform_16_10000.txt
+##########
+Tree Build Time (in seconds): 0.019174
+Index Build Time (in seconds) [includes tree build time]: 0.390074
+Tree statistics: 
+Items:10000
+Nodes:734
+Leaves:686
+InnerNodes:48
+Levels:4
+Average Fill:0.694155
+
+Done Processing File:  ../../csci540_data/uniform/uniform_16_10000.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/uniform/uniform_16_100000.txt
+##########
+Tree Build Time (in seconds): 0.248412
+Index Build Time (in seconds) [includes tree build time]: 3.92676
+Tree statistics: 
+Items:100000
+Nodes:7219
+Leaves:6746
+InnerNodes:473
+Levels:5
+Average Fill:0.705886
+
+Done Processing File:  ../../csci540_data/uniform/uniform_16_100000.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/uniform/uniform_256_1000.txt
+##########
+Tree Build Time (in seconds): 0.001677
+Index Build Time (in seconds) [includes tree build time]: 0.35014
+Tree statistics: 
+Items:1000
+Nodes:75
+Leaves:70
+InnerNodes:5
+Levels:3
+Average Fill:0.680272
+
+Done Processing File:  ../../csci540_data/uniform/uniform_256_1000.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/uniform/uniform_256_10000.txt
+##########
+Tree Build Time (in seconds): 0.019796
+Index Build Time (in seconds) [includes tree build time]: 3.55344
+Tree statistics: 
+Items:10000
+Nodes:727
+Leaves:681
+InnerNodes:46
+Levels:4
+Average Fill:0.699252
+
+Done Processing File:  ../../csci540_data/uniform/uniform_256_10000.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/uniform/uniform_256_100000.txt
+##########
+Tree Build Time (in seconds): 0.251669
+Index Build Time (in seconds) [includes tree build time]: 35.482
+Tree statistics: 
+Items:100000
+Nodes:7284
+Leaves:6790
+InnerNodes:494
+Levels:5
+Average Fill:0.701311
+
+Done Processing File:  ../../csci540_data/uniform/uniform_256_100000.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/uniform/uniform_64_1000.txt
+##########
+Tree Build Time (in seconds): 0.001716
+Index Build Time (in seconds) [includes tree build time]: 0.101742
+Tree statistics: 
+Items:1000
+Nodes:71
+Leaves:66
+InnerNodes:5
+Levels:3
+Average Fill:0.721501
+
+Done Processing File:  ../../csci540_data/uniform/uniform_64_1000.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/uniform/uniform_64_10000.txt
+##########
+Tree Build Time (in seconds): 0.020078
+Index Build Time (in seconds) [includes tree build time]: 1.03117
+Tree statistics: 
+Items:10000
+Nodes:727
+Leaves:681
+InnerNodes:46
+Levels:4
+Average Fill:0.699252
+
+Done Processing File:  ../../csci540_data/uniform/uniform_64_10000.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/uniform/uniform_64_100000.txt
+##########
+Tree Build Time (in seconds): 0.241396
+Index Build Time (in seconds) [includes tree build time]: 10.3304
+Tree statistics: 
+Items:100000
+Nodes:7271
+Leaves:6798
+InnerNodes:473
+Levels:5
+Average Fill:0.700486
+
+Done Processing File:  ../../csci540_data/uniform/uniform_64_100000.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/Real-256-16000-random.txt
+##########
+Tree Build Time (in seconds): 0.030192
+Index Build Time (in seconds) [includes tree build time]: 5.58927
+Tree statistics: 
+Items:16000
+Nodes:1160
+Leaves:1088
+InnerNodes:72
+Levels:4
+Average Fill:0.70028
+
+Done Processing File:  ../../csci540_data/Real-256-16000-random.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/Real-16-160-random.txt
+##########
+Tree Build Time (in seconds): 0.000241
+Index Build Time (in seconds) [includes tree build time]: 0.006158
+Tree statistics: 
+Items:160
+Nodes:12
+Leaves:11
+InnerNodes:1
+Levels:2
+Average Fill:0.692641
+
+Done Processing File:  ../../csci540_data/Real-16-160-random.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/Real-16-1600-random.txt
+##########
+Tree Build Time (in seconds): 0.002663
+Index Build Time (in seconds) [includes tree build time]: 0.060513
+Tree statistics: 
+Items:1600
+Nodes:117
+Leaves:108
+InnerNodes:9
+Levels:3
+Average Fill:0.705467
+
+Done Processing File:  ../../csci540_data/Real-16-1600-random.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/Real-16-16000-random.txt
+##########
+Tree Build Time (in seconds): 0.030111
+Index Build Time (in seconds) [includes tree build time]: 0.605428
+Tree statistics: 
+Items:16000
+Nodes:1123
+Leaves:1050
+InnerNodes:73
+Levels:4
+Average Fill:0.725624
+
+Done Processing File:  ../../csci540_data/Real-16-16000-random.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/Real-64-160-random.txt
+##########
+Tree Build Time (in seconds): 0.000238
+Index Build Time (in seconds) [includes tree build time]: 0.016485
+Tree statistics: 
+Items:160
+Nodes:13
+Leaves:12
+InnerNodes:1
+Levels:2
+Average Fill:0.634921
+
+Done Processing File:  ../../csci540_data/Real-64-160-random.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/Real-64-1600-random.txt
+##########
+Tree Build Time (in seconds): 0.002711
+Index Build Time (in seconds) [includes tree build time]: 0.162959
+Tree statistics: 
+Items:1600
+Nodes:114
+Leaves:105
+InnerNodes:9
+Levels:3
+Average Fill:0.725624
+
+Done Processing File:  ../../csci540_data/Real-64-1600-random.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/Real-64-16000-random.txt
+##########
+Tree Build Time (in seconds): 0.030938
+Index Build Time (in seconds) [includes tree build time]: 1.61908
+Tree statistics: 
+Items:16000
+Nodes:1158
+Leaves:1087
+InnerNodes:71
+Levels:4
+Average Fill:0.700924
+
+Done Processing File:  ../../csci540_data/Real-64-16000-random.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/Real-256-160-random.txt
+##########
+Tree Build Time (in seconds): 0.000245
+Index Build Time (in seconds) [includes tree build time]: 0.056768
+Tree statistics: 
+Items:160
+Nodes:12
+Leaves:11
+InnerNodes:1
+Levels:2
+Average Fill:0.692641
+
+Done Processing File:  ../../csci540_data/Real-256-160-random.txt
+>>>>>>>>>>
+ 
+Processing File:  ../../csci540_data/Real-256-1600-random.txt
+##########
+Tree Build Time (in seconds): 0.002698
+Index Build Time (in seconds) [includes tree build time]: 0.564635
+Tree statistics: 
+Items:1600
+Nodes:116
+Leaves:107
+InnerNodes:9
+Levels:3
+Average Fill:0.712061
+
+Done Processing File:  ../../csci540_data/Real-256-1600-random.txt
+>>>>>>>>>>
+ 

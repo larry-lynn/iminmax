@@ -1,0 +1,2138 @@
+Changing working directory to that of main program
+PROCESSING INPUT FILE ../../csci540_data/uniform/uniform_16_1000.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 1.412 ms
+Index Build Time [includes tree build time]: 3.783 ms
+Tree statistics: 
+Items:1000
+Nodes:70
+Leaves:65
+InnerNodes:5
+Levels:3
+Average Fill:0.732601
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/uniform_queries/uniform_16_1000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 42
+Query Time: 0.023 ms
+Perform Query: 2
+Found: 1
+ID: 885
+Query Time: 0.023 ms
+Average Query Time: 0.023 ms
+
+PERFORMING NARROW RANGE QUERY queries/uniform_queries/uniform_16_1000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 458
+Query Time: 0.049 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 459
+Query Time: 0.046 ms
+Average Query Time: 0.0475 ms
+
+PERFORMING WIDE RANGE QUERY queries/uniform_queries/uniform_16_1000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 458
+Query Time: 0.047 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 459
+Query Time: 0.041 ms
+Average Query Time: 0.044 ms
+
+PERFORMING KNN QUERY queries/uniform_queries/uniform_16_1000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 111
+Results:
+Neighbor: 42;	Distance: 0
+Neighbor: 324;	Distance: 0.776764
+Neighbor: 738;	Distance: 0.933246
+Query Time: 10.726 ms
+Perform Query: 2
+Nodes accessed for KNN query: 110
+Results:
+Neighbor: 885;	Distance: 0
+Neighbor: 523;	Distance: 0.936191
+Neighbor: 27;	Distance: 0.946191
+Query Time: 10.53 ms
+Average Query Time: 10.628 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/uniform/uniform_16_10000.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 16.89 ms
+Index Build Time [includes tree build time]: 42.544 ms
+Tree statistics: 
+Items:10000
+Nodes:730
+Leaves:684
+InnerNodes:46
+Levels:4
+Average Fill:0.696185
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/uniform_queries/uniform_16_10000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 1301
+Query Time: 0.025 ms
+Perform Query: 2
+Found: 1
+ID: 9901
+Query Time: 0.057 ms
+Average Query Time: 0.041 ms
+
+PERFORMING NARROW RANGE QUERY queries/uniform_queries/uniform_16_10000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 4
+Found: 1
+ID: 8354
+Query Time: 0.058 ms
+Perform Query: 2
+Nodes accessed by range query: 4
+Found: 1
+ID: 8355
+Query Time: 0.04 ms
+Average Query Time: 0.049 ms
+
+PERFORMING WIDE RANGE QUERY queries/uniform_queries/uniform_16_10000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 4
+Found: 1
+ID: 8354
+Query Time: 0.07 ms
+Perform Query: 2
+Nodes accessed by range query: 4
+Found: 1
+ID: 8355
+Query Time: 0.049 ms
+Average Query Time: 0.0595 ms
+
+PERFORMING KNN QUERY queries/uniform_queries/uniform_16_10000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 636
+Results:
+Neighbor: 1301;	Distance: 0
+Neighbor: 4882;	Distance: 0.748087
+Neighbor: 3921;	Distance: 0.780434
+Query Time: 100.051 ms
+Perform Query: 2
+Nodes accessed for KNN query: 606
+Results:
+Neighbor: 9901;	Distance: 0
+Neighbor: 1512;	Distance: 0.738863
+Neighbor: 1692;	Distance: 0.812262
+Query Time: 96.271 ms
+Average Query Time: 98.161 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/uniform/uniform_16_100000.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 219.088 ms
+Index Build Time [includes tree build time]: 474.347 ms
+Tree statistics: 
+Items:100000
+Nodes:7265
+Leaves:6793
+InnerNodes:472
+Levels:5
+Average Fill:0.701002
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/uniform_queries/uniform_16_100000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 6131
+Query Time: 0.031 ms
+Perform Query: 2
+Found: 1
+ID: 28249
+Query Time: 0.029 ms
+Average Query Time: 0.03 ms
+
+PERFORMING NARROW RANGE QUERY queries/uniform_queries/uniform_16_100000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 2457
+Query Time: 0.076 ms
+Perform Query: 2
+Nodes accessed by range query: 6
+Found: 1
+ID: 2458
+Query Time: 0.096 ms
+Average Query Time: 0.086 ms
+
+PERFORMING WIDE RANGE QUERY queries/uniform_queries/uniform_16_100000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 2457
+Query Time: 0.079 ms
+Perform Query: 2
+Nodes accessed by range query: 6
+Found: 1
+ID: 2458
+Query Time: 0.155 ms
+Average Query Time: 0.117 ms
+
+PERFORMING KNN QUERY queries/uniform_queries/uniform_16_100000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 4718
+Results:
+Neighbor: 6131;	Distance: 0
+Neighbor: 70579;	Distance: 0.603165
+Neighbor: 375;	Distance: 0.610769
+Query Time: 812.702 ms
+Perform Query: 2
+Nodes accessed for KNN query: 5251
+Results:
+Neighbor: 1793;	Distance: 0.63315
+Neighbor: 74423;	Distance: 0.652066
+Neighbor: 12716;	Distance: 0.672585
+Query Time: 905.164 ms
+Average Query Time: 858.933 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/uniform/uniform_64_1000.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 1.437 ms
+Index Build Time [includes tree build time]: 7.297 ms
+Tree statistics: 
+Items:1000
+Nodes:76
+Leaves:71
+InnerNodes:5
+Levels:3
+Average Fill:0.670691
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/uniform_queries/uniform_64_1000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 69
+Query Time: 0.03 ms
+Perform Query: 2
+Found: 1
+ID: 420
+Query Time: 0.028 ms
+Average Query Time: 0.029 ms
+
+PERFORMING NARROW RANGE QUERY queries/uniform_queries/uniform_64_1000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 707
+Query Time: 0.075 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 708
+Query Time: 0.069 ms
+Average Query Time: 0.072 ms
+
+PERFORMING WIDE RANGE QUERY queries/uniform_queries/uniform_64_1000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 707
+Query Time: 0.063 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 708
+Query Time: 0.066 ms
+Average Query Time: 0.0645 ms
+
+PERFORMING KNN QUERY queries/uniform_queries/uniform_64_1000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 264
+Results:
+Neighbor: 69;	Distance: 0
+Neighbor: 397;	Distance: 2.70383
+Neighbor: 512;	Distance: 2.73373
+Query Time: 17.498 ms
+Perform Query: 2
+Nodes accessed for KNN query: 265
+Results:
+Neighbor: 420;	Distance: 0
+Neighbor: 709;	Distance: 2.22804
+Neighbor: 655;	Distance: 2.42035
+Query Time: 17.542 ms
+Average Query Time: 17.52 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/uniform/uniform_64_10000.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 17 ms
+Index Build Time [includes tree build time]: 77.959 ms
+Tree statistics: 
+Items:10000
+Nodes:720
+Leaves:674
+InnerNodes:46
+Levels:4
+Average Fill:0.706514
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/uniform_queries/uniform_64_10000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 6666
+Query Time: 0.03 ms
+Perform Query: 2
+Found: 1
+ID: 666
+Query Time: 0.029 ms
+Average Query Time: 0.0295 ms
+
+PERFORMING NARROW RANGE QUERY queries/uniform_queries/uniform_64_10000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 4
+Found: 1
+ID: 1935
+Query Time: 0.064 ms
+Perform Query: 2
+Nodes accessed by range query: 4
+Found: 1
+ID: 1936
+Query Time: 0.065 ms
+Average Query Time: 0.0645 ms
+
+PERFORMING WIDE RANGE QUERY queries/uniform_queries/uniform_64_10000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 4
+Found: 1
+ID: 1935
+Query Time: 0.064 ms
+Perform Query: 2
+Nodes accessed by range query: 4
+Found: 1
+ID: 1936
+Query Time: 0.065 ms
+Average Query Time: 0.0645 ms
+
+PERFORMING KNN QUERY queries/uniform_queries/uniform_64_10000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 928
+Results:
+Neighbor: 6666;	Distance: 0
+Neighbor: 2345;	Distance: 2.25708
+Neighbor: 5018;	Distance: 2.39364
+Query Time: 171.257 ms
+Perform Query: 2
+Nodes accessed for KNN query: 931
+Results:
+Neighbor: 666;	Distance: 0
+Neighbor: 3512;	Distance: 2.40239
+Neighbor: 5391;	Distance: 2.40907
+Query Time: 171.819 ms
+Average Query Time: 171.538 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/uniform/uniform_64_100000.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 219.613 ms
+Index Build Time [includes tree build time]: 819.303 ms
+Tree statistics: 
+Items:100000
+Nodes:7270
+Leaves:6799
+InnerNodes:471
+Levels:5
+Average Fill:0.700383
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/uniform_queries/uniform_64_100000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 130
+Query Time: 0.037 ms
+Perform Query: 2
+Found: 1
+ID: 30096
+Query Time: 0.031 ms
+Average Query Time: 0.034 ms
+
+PERFORMING NARROW RANGE QUERY queries/uniform_queries/uniform_64_100000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 721
+Query Time: 0.206 ms
+Perform Query: 2
+Nodes accessed by range query: 6
+Found: 1
+ID: 722
+Query Time: 0.161 ms
+Average Query Time: 0.1835 ms
+
+PERFORMING WIDE RANGE QUERY queries/uniform_queries/uniform_64_100000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 721
+Query Time: 0.203 ms
+Perform Query: 2
+Nodes accessed by range query: 6
+Found: 1
+ID: 722
+Query Time: 0.156 ms
+Average Query Time: 0.1795 ms
+
+PERFORMING KNN QUERY queries/uniform_queries/uniform_64_100000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 7055
+Results:
+Neighbor: 130;	Distance: 0
+Neighbor: 69547;	Distance: 2.32145
+Neighbor: 42727;	Distance: 2.48874
+Query Time: 1912.94 ms
+Perform Query: 2
+Nodes accessed for KNN query: 7059
+Results:
+Neighbor: 30096;	Distance: 0
+Neighbor: 33231;	Distance: 2.34685
+Neighbor: 65070;	Distance: 2.39303
+Query Time: 1915.54 ms
+Average Query Time: 1914.24 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/uniform/uniform_256_1000.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 1.436 ms
+Index Build Time [includes tree build time]: 21.254 ms
+Tree statistics: 
+Items:1000
+Nodes:74
+Leaves:69
+InnerNodes:5
+Levels:3
+Average Fill:0.690131
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/uniform_queries/uniform_256_1000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 666
+Query Time: 0.064 ms
+Perform Query: 2
+Found: 1
+ID: 440
+Query Time: 0.061 ms
+Average Query Time: 0.0625 ms
+
+PERFORMING NARROW RANGE QUERY queries/uniform_queries/uniform_256_1000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 737
+Query Time: 0.131 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 738
+Query Time: 0.116 ms
+Average Query Time: 0.1235 ms
+
+PERFORMING WIDE RANGE QUERY queries/uniform_queries/uniform_256_1000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 737
+Query Time: 0.121 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 738
+Query Time: 0.114 ms
+Average Query Time: 0.1175 ms
+
+PERFORMING KNN QUERY queries/uniform_queries/uniform_256_1000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 840
+Results:
+Neighbor: 666;	Distance: 0
+Neighbor: 198;	Distance: 5.94548
+Neighbor: 521;	Distance: 5.95095
+Query Time: 40.016 ms
+Perform Query: 2
+Nodes accessed for KNN query: 840
+Results:
+Neighbor: 440;	Distance: 0
+Neighbor: 805;	Distance: 5.87879
+Neighbor: 775;	Distance: 5.93003
+Query Time: 39.89 ms
+Average Query Time: 39.953 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/uniform/uniform_256_10000.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 16.855 ms
+Index Build Time [includes tree build time]: 217.099 ms
+Tree statistics: 
+Items:10000
+Nodes:722
+Leaves:676
+InnerNodes:46
+Levels:4
+Average Fill:0.704424
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/uniform_queries/uniform_256_10000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 680
+Query Time: 0.062 ms
+Perform Query: 2
+Found: 1
+ID: 6535
+Query Time: 0.063 ms
+Average Query Time: 0.0625 ms
+
+PERFORMING NARROW RANGE QUERY queries/uniform_queries/uniform_256_10000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 537
+Query Time: 0.133 ms
+Perform Query: 2
+Nodes accessed by range query: 5
+Found: 1
+ID: 538
+Query Time: 0.14 ms
+Average Query Time: 0.1365 ms
+
+PERFORMING WIDE RANGE QUERY queries/uniform_queries/uniform_256_10000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 537
+Query Time: 0.134 ms
+Perform Query: 2
+Nodes accessed by range query: 5
+Found: 1
+ID: 538
+Query Time: 0.138 ms
+Average Query Time: 0.136 ms
+
+PERFORMING KNN QUERY queries/uniform_queries/uniform_256_10000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 1734
+Results:
+Neighbor: 680;	Distance: 0
+Neighbor: 5126;	Distance: 5.41493
+Neighbor: 46;	Distance: 5.65091
+Query Time: 403.901 ms
+Perform Query: 2
+Nodes accessed for KNN query: 1734
+Results:
+Neighbor: 6535;	Distance: 0
+Neighbor: 7223;	Distance: 5.73079
+Neighbor: 5948;	Distance: 5.77814
+Query Time: 404.132 ms
+Average Query Time: 404.017 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/uniform/uniform_256_100000.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 214.407 ms
+Index Build Time [includes tree build time]: 2211.6 ms
+Tree statistics: 
+Items:100000
+Nodes:7248
+Leaves:6781
+InnerNodes:467
+Levels:5
+Average Fill:0.702242
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/uniform_queries/uniform_256_100000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 5670
+Query Time: 0.073 ms
+Perform Query: 2
+Found: 1
+ID: 9880
+Query Time: 0.068 ms
+Average Query Time: 0.0705 ms
+
+PERFORMING NARROW RANGE QUERY queries/uniform_queries/uniform_256_100000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 1272
+Query Time: 0.264 ms
+Perform Query: 2
+Nodes accessed by range query: 6
+Found: 1
+ID: 1273
+Query Time: 0.217 ms
+Average Query Time: 0.2405 ms
+
+PERFORMING WIDE RANGE QUERY queries/uniform_queries/uniform_256_100000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 1272
+Query Time: 0.262 ms
+Perform Query: 2
+Nodes accessed by range query: 6
+Found: 1
+ID: 1273
+Query Time: 0.213 ms
+Average Query Time: 0.2375 ms
+
+PERFORMING KNN QUERY queries/uniform_queries/uniform_256_100000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 8232
+Results:
+Neighbor: 5670;	Distance: 0
+Neighbor: 72789;	Distance: 5.40636
+Neighbor: 29696;	Distance: 5.46069
+Query Time: 4296.02 ms
+Perform Query: 2
+Nodes accessed for KNN query: 8231
+Results:
+Neighbor: 9880;	Distance: 0
+Neighbor: 58190;	Distance: 5.73379
+Neighbor: 1908;	Distance: 5.73489
+Query Time: 4292.79 ms
+Average Query Time: 4294.41 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/16Dimension10cluster1000Points.csv
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 1.374 ms
+Index Build Time [includes tree build time]: 3.683 ms
+Tree statistics: 
+Items:1000
+Nodes:77
+Leaves:71
+InnerNodes:6
+Levels:3
+Average Fill:0.670691
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/cluster_queries/cluster_16_1000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 50
+Query Time: 0.022 ms
+Perform Query: 2
+Found: 1
+ID: 51
+Query Time: 0.021 ms
+Average Query Time: 0.0215 ms
+
+PERFORMING NARROW RANGE QUERY queries/cluster_queries/cluster_16_1000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 50
+Query Time: 0.05 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 51
+Query Time: 0.041 ms
+Average Query Time: 0.0455 ms
+
+PERFORMING WIDE RANGE QUERY queries/cluster_queries/cluster_16_1000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 50
+Query Time: 0.047 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 51
+Query Time: 0.041 ms
+Average Query Time: 0.044 ms
+
+PERFORMING KNN QUERY queries/cluster_queries/cluster_16_1000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 61
+Results:
+Neighbor: 50;	Distance: 0
+Neighbor: 51;	Distance: 0.0783817
+Neighbor: 11;	Distance: 0.103217
+Query Time: 1.42 ms
+Perform Query: 2
+Nodes accessed for KNN query: 56
+Results:
+Neighbor: 51;	Distance: 0
+Neighbor: 50;	Distance: 0.0783817
+Neighbor: 9;	Distance: 0.116445
+Query Time: 0.734 ms
+Average Query Time: 1.077 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/16Dimension10cluster10000Points.csv
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 16.135 ms
+Index Build Time [includes tree build time]: 40.659 ms
+Tree statistics: 
+Items:10000
+Nodes:724
+Leaves:673
+InnerNodes:51
+Levels:4
+Average Fill:0.707564
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/cluster_queries/cluster_16_10000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 50
+Query Time: 0.022 ms
+Perform Query: 2
+Found: 1
+ID: 51
+Query Time: 0.02 ms
+Average Query Time: 0.021 ms
+
+PERFORMING NARROW RANGE QUERY queries/cluster_queries/cluster_16_10000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 50
+Query Time: 0.05 ms
+Perform Query: 2
+Nodes accessed by range query: 4
+Found: 1
+ID: 51
+Query Time: 0.048 ms
+Average Query Time: 0.049 ms
+
+PERFORMING WIDE RANGE QUERY queries/cluster_queries/cluster_16_10000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 50
+Query Time: 0.049 ms
+Perform Query: 2
+Nodes accessed by range query: 4
+Found: 1
+ID: 51
+Query Time: 0.064 ms
+Average Query Time: 0.0565 ms
+
+PERFORMING KNN QUERY queries/cluster_queries/cluster_16_10000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 139
+Results:
+Neighbor: 50;	Distance: 0
+Neighbor: 998;	Distance: 0.0952066
+Neighbor: 216;	Distance: 0.101357
+Query Time: 11.76 ms
+Perform Query: 2
+Nodes accessed for KNN query: 186
+Results:
+Neighbor: 51;	Distance: 0
+Neighbor: 720;	Distance: 0.0671844
+Neighbor: 227;	Distance: 0.0865446
+Query Time: 20.197 ms
+Average Query Time: 15.9785 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/16Dimension10cluster100000Points.csv
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 178.721 ms
+Index Build Time [includes tree build time]: 425.838 ms
+Tree statistics: 
+Items:100000
+Nodes:7662
+Leaves:7156
+InnerNodes:506
+Levels:5
+Average Fill:0.665442
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/cluster_queries/cluster_16_100000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 50
+Query Time: 0.046 ms
+Perform Query: 2
+Found: 1
+ID: 51
+Query Time: 0.039 ms
+Average Query Time: 0.0425 ms
+
+PERFORMING NARROW RANGE QUERY queries/cluster_queries/cluster_16_100000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 8
+Found: 1
+ID: 50
+Query Time: 0.638 ms
+Perform Query: 2
+Nodes accessed by range query: 7
+Found: 1
+ID: 51
+Query Time: 0.43 ms
+Average Query Time: 0.534 ms
+
+PERFORMING WIDE RANGE QUERY queries/cluster_queries/cluster_16_100000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 8
+Found: 1
+ID: 50
+Query Time: 0.641 ms
+Perform Query: 2
+Nodes accessed by range query: 7
+Found: 0
+Query Time: 0.442 ms
+Average Query Time: 0.5415 ms
+
+PERFORMING KNN QUERY queries/cluster_queries/cluster_16_100000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 3476
+Results:
+Neighbor: 50;	Distance: 0
+Neighbor: 310;	Distance: 0.0913426
+Neighbor: 796;	Distance: 0.0941256
+Query Time: 615.845 ms
+Perform Query: 2
+Nodes accessed for KNN query: 587
+Results:
+Neighbor: 51;	Distance: 0
+Neighbor: 1119;	Distance: 0.125059
+Neighbor: 3601;	Distance: 0.125726
+Query Time: 92.435 ms
+Average Query Time: 354.14 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/64Dimension10cluster1000Points.csv
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 1.461 ms
+Index Build Time [includes tree build time]: 7.386 ms
+Tree statistics: 
+Items:1000
+Nodes:78
+Leaves:72
+InnerNodes:6
+Levels:3
+Average Fill:0.661376
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/cluster_queries/cluster_64_1000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 50
+Query Time: 0.03 ms
+Perform Query: 2
+Found: 1
+ID: 51
+Query Time: 0.037 ms
+Average Query Time: 0.0335 ms
+
+PERFORMING NARROW RANGE QUERY queries/cluster_queries/cluster_64_1000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 50
+Query Time: 0.063 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 51
+Query Time: 0.068 ms
+Average Query Time: 0.0655 ms
+
+PERFORMING WIDE RANGE QUERY queries/cluster_queries/cluster_64_1000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 50
+Query Time: 0.063 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 51
+Query Time: 0.067 ms
+Average Query Time: 0.065 ms
+
+PERFORMING KNN QUERY queries/cluster_queries/cluster_64_1000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 224
+Results:
+Neighbor: 80;	Distance: 0.273691
+Neighbor: 87;	Distance: 0.281331
+Neighbor: 29;	Distance: 0.281888
+Query Time: 7.011 ms
+Perform Query: 2
+Nodes accessed for KNN query: 223
+Results:
+Neighbor: 51;	Distance: 0
+Neighbor: 50;	Distance: 0.282559
+Neighbor: 31;	Distance: 0.285232
+Query Time: 6.866 ms
+Average Query Time: 6.9385 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/64Dimension10cluster10000Points.csv
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 16.621 ms
+Index Build Time [includes tree build time]: 77.226 ms
+Tree statistics: 
+Items:10000
+Nodes:738
+Leaves:686
+InnerNodes:52
+Levels:4
+Average Fill:0.694155
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/cluster_queries/cluster_64_10000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 50
+Query Time: 0.031 ms
+Perform Query: 2
+Found: 1
+ID: 51
+Query Time: 0.029 ms
+Average Query Time: 0.03 ms
+
+PERFORMING NARROW RANGE QUERY queries/cluster_queries/cluster_64_10000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 50
+Query Time: 0.063 ms
+Perform Query: 2
+Nodes accessed by range query: 4
+Found: 1
+ID: 51
+Query Time: 0.059 ms
+Average Query Time: 0.061 ms
+
+PERFORMING WIDE RANGE QUERY queries/cluster_queries/cluster_64_10000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 50
+Query Time: 0.064 ms
+Perform Query: 2
+Nodes accessed by range query: 4
+Found: 1
+ID: 51
+Query Time: 0.057 ms
+Average Query Time: 0.0605 ms
+
+PERFORMING KNN QUERY queries/cluster_queries/cluster_64_10000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 573
+Results:
+Neighbor: 50;	Distance: 0
+Neighbor: 275;	Distance: 0.257388
+Neighbor: 427;	Distance: 0.259891
+Query Time: 78.649 ms
+Perform Query: 2
+Nodes accessed for KNN query: 579
+Results:
+Neighbor: 51;	Distance: 0
+Neighbor: 751;	Distance: 0.24469
+Neighbor: 90;	Distance: 0.247529
+Query Time: 80.317 ms
+Average Query Time: 79.483 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/64Dimension10cluster100000Points.csv
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 188.466 ms
+Index Build Time [includes tree build time]: 793.843 ms
+Tree statistics: 
+Items:100000
+Nodes:7300
+Leaves:6824
+InnerNodes:476
+Levels:5
+Average Fill:0.697817
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/cluster_queries/cluster_64_100000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 50
+Query Time: 0.037 ms
+Perform Query: 2
+Found: 1
+ID: 51
+Query Time: 0.034 ms
+Average Query Time: 0.0355 ms
+
+PERFORMING NARROW RANGE QUERY queries/cluster_queries/cluster_64_100000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 6
+Found: 1
+ID: 50
+Query Time: 0.164 ms
+Perform Query: 2
+Nodes accessed by range query: 6
+Found: 1
+ID: 51
+Query Time: 0.123 ms
+Average Query Time: 0.1435 ms
+
+PERFORMING WIDE RANGE QUERY queries/cluster_queries/cluster_64_100000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 6
+Found: 1
+ID: 50
+Query Time: 0.155 ms
+Perform Query: 2
+Nodes accessed by range query: 6
+Found: 1
+ID: 51
+Query Time: 0.123 ms
+Average Query Time: 0.139 ms
+
+PERFORMING KNN QUERY queries/cluster_queries/cluster_64_100000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 2824
+Results:
+Neighbor: 50;	Distance: 0
+Neighbor: 9932;	Distance: 0.246226
+Neighbor: 1887;	Distance: 0.249106
+Query Time: 715.008 ms
+Perform Query: 2
+Nodes accessed for KNN query: 2482
+Results:
+Neighbor: 51;	Distance: 0
+Neighbor: 9552;	Distance: 0.23523
+Neighbor: 8846;	Distance: 0.239041
+Query Time: 614.71 ms
+Average Query Time: 664.859 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/256Dimension10cluster1000Points.csv
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 1.402 ms
+Index Build Time [includes tree build time]: 20.826 ms
+Tree statistics: 
+Items:1000
+Nodes:79
+Leaves:74
+InnerNodes:5
+Levels:3
+Average Fill:0.643501
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/cluster_queries/cluster_256_1000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 50
+Query Time: 0.063 ms
+Perform Query: 2
+Found: 1
+ID: 51
+Query Time: 0.06 ms
+Average Query Time: 0.0615 ms
+
+PERFORMING NARROW RANGE QUERY queries/cluster_queries/cluster_256_1000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 50
+Query Time: 0.122 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 51
+Query Time: 0.112 ms
+Average Query Time: 0.117 ms
+
+PERFORMING WIDE RANGE QUERY queries/cluster_queries/cluster_256_1000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 50
+Query Time: 0.121 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 51
+Query Time: 0.114 ms
+Average Query Time: 0.1175 ms
+
+PERFORMING KNN QUERY queries/cluster_queries/cluster_256_1000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 826
+Results:
+Neighbor: 50;	Distance: 0
+Neighbor: 89;	Distance: 0.600585
+Neighbor: 82;	Distance: 0.614671
+Query Time: 28.606 ms
+Perform Query: 2
+Nodes accessed for KNN query: 827
+Results:
+Neighbor: 51;	Distance: 0
+Neighbor: 55;	Distance: 0.586844
+Neighbor: 0;	Distance: 0.586862
+Query Time: 29.46 ms
+Average Query Time: 29.033 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/256Dimension10cluster10000Points.csv
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 16.168 ms
+Index Build Time [includes tree build time]: 207.59 ms
+Tree statistics: 
+Items:10000
+Nodes:748
+Leaves:695
+InnerNodes:53
+Levels:4
+Average Fill:0.685166
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/cluster_queries/cluster_256_10000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 50
+Query Time: 0.063 ms
+Perform Query: 2
+Found: 1
+ID: 51
+Query Time: 0.061 ms
+Average Query Time: 0.062 ms
+
+PERFORMING NARROW RANGE QUERY queries/cluster_queries/cluster_256_10000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 4
+Found: 1
+ID: 50
+Query Time: 0.134 ms
+Perform Query: 2
+Nodes accessed by range query: 4
+Found: 1
+ID: 51
+Query Time: 0.113 ms
+Average Query Time: 0.1235 ms
+
+PERFORMING WIDE RANGE QUERY queries/cluster_queries/cluster_256_10000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 4
+Found: 1
+ID: 50
+Query Time: 0.133 ms
+Perform Query: 2
+Nodes accessed by range query: 4
+Found: 1
+ID: 51
+Query Time: 0.115 ms
+Average Query Time: 0.124 ms
+
+PERFORMING KNN QUERY queries/cluster_queries/cluster_256_10000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 1477
+Results:
+Neighbor: 50;	Distance: 0
+Neighbor: 613;	Distance: 0.576747
+Neighbor: 499;	Distance: 0.580681
+Query Time: 259.324 ms
+Perform Query: 2
+Nodes accessed for KNN query: 1476
+Results:
+Neighbor: 624;	Distance: 0.584236
+Neighbor: 213;	Distance: 0.585299
+Neighbor: 87;	Distance: 0.597394
+Query Time: 260.293 ms
+Average Query Time: 259.808 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/256Dimension10cluster100000Points.csv
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 183.868 ms
+Index Build Time [includes tree build time]: 2126.72 ms
+Tree statistics: 
+Items:100000
+Nodes:7261
+Leaves:6776
+InnerNodes:485
+Levels:5
+Average Fill:0.70276
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/cluster_queries/cluster_256_100000_qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 50
+Query Time: 0.07 ms
+Perform Query: 2
+Found: 1
+ID: 51
+Query Time: 0.068 ms
+Average Query Time: 0.069 ms
+
+PERFORMING NARROW RANGE QUERY queries/cluster_queries/cluster_256_100000_qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 50
+Query Time: 0.348 ms
+Perform Query: 2
+Nodes accessed by range query: 5
+Found: 1
+ID: 51
+Query Time: 0.117 ms
+Average Query Time: 0.2325 ms
+
+PERFORMING WIDE RANGE QUERY queries/cluster_queries/cluster_256_100000_qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 1
+ID: 50
+Query Time: 0.354 ms
+Perform Query: 2
+Nodes accessed by range query: 5
+Found: 1
+ID: 51
+Query Time: 0.117 ms
+Average Query Time: 0.2355 ms
+
+PERFORMING KNN QUERY queries/cluster_queries/cluster_256_100000_qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 5540
+Results:
+Neighbor: 50;	Distance: 0
+Neighbor: 8808;	Distance: 0.565941
+Neighbor: 7065;	Distance: 0.576985
+Query Time: 2730.89 ms
+Perform Query: 2
+Nodes accessed for KNN query: 5807
+Results:
+Neighbor: 51;	Distance: 0
+Neighbor: 6058;	Distance: 0.561889
+Neighbor: 3341;	Distance: 0.577814
+Query Time: 2883.09 ms
+Average Query Time: 2806.99 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/Real-16-160-random.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 0.201 ms
+Index Build Time [includes tree build time]: 0.584 ms
+Tree statistics: 
+Items:160
+Nodes:12
+Leaves:11
+InnerNodes:1
+Levels:2
+Average Fill:0.692641
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/real_queries/Real-16-160-qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 72
+Query Time: 0.021 ms
+Perform Query: 2
+Found: 1
+ID: 27
+Query Time: 0.021 ms
+Average Query Time: 0.021 ms
+
+PERFORMING NARROW RANGE QUERY queries/real_queries/Real-16-160-qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 2
+Found: 1
+ID: 72
+Query Time: 0.048 ms
+Perform Query: 2
+Nodes accessed by range query: 2
+Found: 1
+ID: 27
+Query Time: 0.039 ms
+Average Query Time: 0.0435 ms
+
+PERFORMING WIDE RANGE QUERY queries/real_queries/Real-16-160-qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 2
+Found: 1
+ID: 72
+Query Time: 0.049 ms
+Perform Query: 2
+Nodes accessed by range query: 2
+Found: 1
+ID: 27
+Query Time: 0.039 ms
+Average Query Time: 0.044 ms
+
+PERFORMING KNN QUERY queries/real_queries/Real-16-160-qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 40
+Results:
+Neighbor: 72;	Distance: 0
+Neighbor: 70;	Distance: 0.0321576
+Neighbor: 64;	Distance: 0.138072
+Query Time: 0.811 ms
+Perform Query: 2
+Nodes accessed for KNN query: 37
+Results:
+Neighbor: 27;	Distance: 0
+Neighbor: 28;	Distance: 0.00997397
+Neighbor: 30;	Distance: 0.0942174
+Query Time: 0.492 ms
+Average Query Time: 0.6515 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/Real-16-1600-random.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 2.322 ms
+Index Build Time [includes tree build time]: 6.081 ms
+Tree statistics: 
+Items:1600
+Nodes:117
+Leaves:108
+InnerNodes:9
+Levels:3
+Average Fill:0.705467
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/real_queries/Real-16-1600-qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 949
+Query Time: 0.022 ms
+Perform Query: 2
+Found: 1
+ID: 1514
+Query Time: 0.022 ms
+Average Query Time: 0.022 ms
+
+PERFORMING NARROW RANGE QUERY queries/real_queries/Real-16-1600-qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 16
+Found: 2
+ID: 1514
+ID: 949
+Query Time: 0.859 ms
+Average Query Time: 0.859 ms
+
+PERFORMING WIDE RANGE QUERY queries/real_queries/Real-16-1600-qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 949
+Query Time: 0.051 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 1514
+Query Time: 0.041 ms
+Average Query Time: 0.046 ms
+
+PERFORMING KNN QUERY queries/real_queries/Real-16-1600-qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 121
+Results:
+Neighbor: 949;	Distance: 0
+Neighbor: 957;	Distance: 0.0432
+Neighbor: 1028;	Distance: 0.320343
+Query Time: 11.801 ms
+Perform Query: 2
+Nodes accessed for KNN query: 123
+Results:
+Neighbor: 1514;	Distance: 0
+Neighbor: 1509;	Distance: 0.0706945
+Neighbor: 1508;	Distance: 0.168556
+Query Time: 11.149 ms
+Average Query Time: 11.475 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/Real-16-16000-random.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 26.034 ms
+Index Build Time [includes tree build time]: 65.357 ms
+Tree statistics: 
+Items:16000
+Nodes:1123
+Leaves:1050
+InnerNodes:73
+Levels:4
+Average Fill:0.725624
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/real_queries/Real-16-16000-qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 10
+ID: 718
+ID: 11918
+ID: 10318
+ID: 7118
+ID: 8718
+ID: 15118
+ID: 3918
+ID: 5518
+ID: 2318
+ID: 13518
+Query Time: 0.087 ms
+Perform Query: 2
+Found: 10
+ID: 7069
+ID: 11869
+ID: 5469
+ID: 13469
+ID: 15069
+ID: 3869
+ID: 2269
+ID: 669
+ID: 10269
+ID: 8669
+Query Time: 0.085 ms
+Average Query Time: 0.086 ms
+
+PERFORMING NARROW RANGE QUERY queries/real_queries/Real-16-16000-qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 10
+ID: 718
+ID: 11918
+ID: 10318
+ID: 7118
+ID: 8718
+ID: 15118
+ID: 3918
+ID: 5518
+ID: 2318
+ID: 13518
+Query Time: 0.134 ms
+Perform Query: 2
+Nodes accessed by range query: 5
+Found: 10
+ID: 7069
+ID: 11869
+ID: 5469
+ID: 13469
+ID: 15069
+ID: 3869
+ID: 2269
+ID: 669
+ID: 10269
+ID: 8669
+Query Time: 0.125 ms
+Average Query Time: 0.1295 ms
+
+PERFORMING WIDE RANGE QUERY queries/real_queries/Real-16-16000-qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 5
+Found: 10
+ID: 718
+ID: 11918
+ID: 10318
+ID: 7118
+ID: 8718
+ID: 15118
+ID: 3918
+ID: 5518
+ID: 2318
+ID: 13518
+Query Time: 0.132 ms
+Perform Query: 2
+Nodes accessed by range query: 5
+Found: 10
+ID: 7069
+ID: 11869
+ID: 5469
+ID: 13469
+ID: 15069
+ID: 3869
+ID: 2269
+ID: 669
+ID: 10269
+ID: 8669
+Query Time: 0.12 ms
+Average Query Time: 0.126 ms
+
+PERFORMING KNN QUERY queries/real_queries/Real-16-16000-qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 68
+Results:
+Neighbor: 11918;	Distance: 0
+Neighbor: 718;	Distance: 0
+Neighbor: 10318;	Distance: 0
+Query Time: 0.125 ms
+Perform Query: 2
+Nodes accessed for KNN query: 68
+Results:
+Neighbor: 11869;	Distance: 0
+Neighbor: 7069;	Distance: 0
+Neighbor: 5469;	Distance: 0
+Query Time: 0.1 ms
+Average Query Time: 0.1125 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/Real-64-160-random.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 0.192 ms
+Index Build Time [includes tree build time]: 1.111 ms
+Tree statistics: 
+Items:160
+Nodes:13
+Leaves:12
+InnerNodes:1
+Levels:2
+Average Fill:0.634921
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/real_queries/Real-64-160-qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 114
+Query Time: 0.061 ms
+Perform Query: 2
+Found: 1
+ID: 97
+Query Time: 0.031 ms
+Average Query Time: 0.046 ms
+
+PERFORMING NARROW RANGE QUERY queries/real_queries/Real-64-160-qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 114
+Query Time: 0.066 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 97
+Query Time: 0.055 ms
+Average Query Time: 0.0605 ms
+
+PERFORMING WIDE RANGE QUERY queries/real_queries/Real-64-160-qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 114
+Query Time: 0.061 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 97
+Query Time: 0.055 ms
+Average Query Time: 0.058 ms
+
+PERFORMING KNN QUERY queries/real_queries/Real-64-160-qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 140
+Results:
+Neighbor: 114;	Distance: 0
+Neighbor: 120;	Distance: 0.3595
+Neighbor: 119;	Distance: 0.365396
+Query Time: 2.462 ms
+Perform Query: 2
+Nodes accessed for KNN query: 137
+Results:
+Neighbor: 99;	Distance: 0.10872
+Neighbor: 86;	Distance: 0.116789
+Neighbor: 87;	Distance: 0.139915
+Query Time: 1.88 ms
+Average Query Time: 2.171 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/Real-64-1600-random.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 2.326 ms
+Index Build Time [includes tree build time]: 11.775 ms
+Tree statistics: 
+Items:1600
+Nodes:114
+Leaves:105
+InnerNodes:9
+Levels:3
+Average Fill:0.725624
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/real_queries/Real-64-1600-qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 2
+ID: 967
+ID: 807
+Query Time: 0.045 ms
+Perform Query: 2
+Found: 1
+ID: 912
+Query Time: 0.03 ms
+Average Query Time: 0.0375 ms
+
+PERFORMING NARROW RANGE QUERY queries/real_queries/Real-64-1600-qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 2
+ID: 967
+ID: 807
+Query Time: 0.082 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 912
+Query Time: 0.056 ms
+Average Query Time: 0.069 ms
+
+PERFORMING WIDE RANGE QUERY queries/real_queries/Real-64-1600-qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 2
+ID: 967
+ID: 807
+Query Time: 0.082 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 912
+Query Time: 0.059 ms
+Average Query Time: 0.0705 ms
+
+PERFORMING KNN QUERY queries/real_queries/Real-64-1600-qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 273
+Results:
+Neighbor: 807;	Distance: 0
+Neighbor: 967;	Distance: 0
+Neighbor: 810;	Distance: 0.466733
+Query Time: 19.696 ms
+Perform Query: 2
+Nodes accessed for KNN query: 243
+Results:
+Neighbor: 912;	Distance: 0
+Neighbor: 910;	Distance: 0.222053
+Neighbor: 1000;	Distance: 0.222053
+Query Time: 12.448 ms
+Average Query Time: 16.072 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/Real-64-16000-random.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 26.616 ms
+Index Build Time [includes tree build time]: 122.221 ms
+Tree statistics: 
+Items:16000
+Nodes:1158
+Leaves:1087
+InnerNodes:71
+Levels:4
+Average Fill:0.700924
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/real_queries/Real-64-16000-qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 10
+ID: 2389
+ID: 8789
+ID: 789
+ID: 15189
+ID: 3989
+ID: 5589
+ID: 7189
+ID: 10389
+ID: 13589
+ID: 11989
+Query Time: 0.156 ms
+Perform Query: 2
+Found: 10
+ID: 13207
+ID: 11607
+ID: 14807
+ID: 2007
+ID: 10007
+ID: 407
+ID: 3607
+ID: 6807
+ID: 8407
+ID: 5207
+Query Time: 0.146 ms
+Average Query Time: 0.151 ms
+
+PERFORMING NARROW RANGE QUERY queries/real_queries/Real-64-16000-qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 4
+Found: 0
+Query Time: 0.173 ms
+Perform Query: 2
+Nodes accessed by range query: 4
+Found: 10
+ID: 13207
+ID: 11607
+ID: 14807
+ID: 2007
+ID: 10007
+ID: 407
+ID: 3607
+ID: 6807
+ID: 8407
+ID: 5207
+Query Time: 0.202 ms
+Average Query Time: 0.1875 ms
+
+PERFORMING WIDE RANGE QUERY queries/real_queries/Real-64-16000-qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 4
+Found: 0
+Query Time: 0.175 ms
+Perform Query: 2
+Nodes accessed by range query: 4
+Found: 10
+ID: 13207
+ID: 11607
+ID: 14807
+ID: 2007
+ID: 10007
+ID: 407
+ID: 3607
+ID: 6807
+ID: 8407
+ID: 5207
+Query Time: 0.2 ms
+Average Query Time: 0.1875 ms
+
+PERFORMING KNN QUERY queries/real_queries/Real-64-16000-qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 261
+Results:
+Neighbor: 8789;	Distance: 0
+Neighbor: 2389;	Distance: 0
+Neighbor: 789;	Distance: 0
+Query Time: 0.237 ms
+Perform Query: 2
+Nodes accessed for KNN query: 261
+Results:
+Neighbor: 11607;	Distance: 0
+Neighbor: 13207;	Distance: 0
+Neighbor: 14807;	Distance: 0
+Query Time: 0.206 ms
+Average Query Time: 0.2215 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/Real-256-160-random.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 0.191 ms
+Index Build Time [includes tree build time]: 3.26 ms
+Tree statistics: 
+Items:160
+Nodes:12
+Leaves:11
+InnerNodes:1
+Levels:2
+Average Fill:0.692641
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/real_queries/Real-256-160-qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 44
+Query Time: 0.062 ms
+Perform Query: 2
+Found: 1
+ID: 2
+Query Time: 0.069 ms
+Average Query Time: 0.0655 ms
+
+PERFORMING NARROW RANGE QUERY queries/real_queries/Real-256-160-qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 2
+Found: 1
+ID: 44
+Query Time: 0.124 ms
+Perform Query: 2
+Nodes accessed by range query: 8
+Found: 1
+ID: 2
+Query Time: 0.576 ms
+Average Query Time: 0.35 ms
+
+PERFORMING WIDE RANGE QUERY queries/real_queries/Real-256-160-qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 2
+Found: 1
+ID: 44
+Query Time: 0.119 ms
+Perform Query: 2
+Nodes accessed by range query: 8
+Found: 1
+ID: 2
+Query Time: 0.575 ms
+Average Query Time: 0.347 ms
+
+PERFORMING KNN QUERY queries/real_queries/Real-256-160-qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 514
+Results:
+Neighbor: 44;	Distance: 0
+Neighbor: 58;	Distance: 0.17243
+Query Time: 0.429 ms
+Perform Query: 2
+Nodes accessed for KNN query: 517
+Results:
+Neighbor: 2;	Distance: 0
+Neighbor: 17;	Distance: 0.26437
+Neighbor: 3;	Distance: 0.292529
+Query Time: 2.241 ms
+Average Query Time: 1.335 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/Real-256-1600-random.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 2.329 ms
+Index Build Time [includes tree build time]: 34.286 ms
+Tree statistics: 
+Items:1600
+Nodes:116
+Leaves:107
+InnerNodes:9
+Levels:3
+Average Fill:0.712061
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/real_queries/Real-256-1600-qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 1
+ID: 453
+Query Time: 0.064 ms
+Perform Query: 2
+Found: 1
+ID: 1002
+Query Time: 0.061 ms
+Average Query Time: 0.0625 ms
+
+PERFORMING NARROW RANGE QUERY queries/real_queries/Real-256-1600-qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 453
+Query Time: 0.122 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 1002
+Query Time: 0.116 ms
+Average Query Time: 0.119 ms
+
+PERFORMING WIDE RANGE QUERY queries/real_queries/Real-256-1600-qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 3
+Found: 1
+ID: 453
+Query Time: 0.123 ms
+Perform Query: 2
+Nodes accessed by range query: 3
+Found: 1
+ID: 1002
+Query Time: 0.114 ms
+Average Query Time: 0.1185 ms
+
+PERFORMING KNN QUERY queries/real_queries/Real-256-1600-qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 772
+Results:
+Neighbor: 453;	Distance: 0
+Neighbor: 459;	Distance: 0.101117
+Neighbor: 445;	Distance: 0.115774
+Query Time: 0.842 ms
+Perform Query: 2
+Nodes accessed for KNN query: 871
+Results:
+Neighbor: 1002;	Distance: 0
+Neighbor: 1010;	Distance: 0.394031
+Neighbor: 1001;	Distance: 0.496054
+Query Time: 57.923 ms
+Average Query Time: 29.3825 ms
+
+##################
+ 
+PROCESSING INPUT FILE ../../csci540_data/Real-256-16000-random.txt
+>>>>>>>>>>>>>>>>>
+Tree Build Time: 26.012 ms
+Index Build Time [includes tree build time]: 347.135 ms
+Tree statistics: 
+Items:16000
+Nodes:1160
+Leaves:1088
+InnerNodes:72
+Levels:4
+Average Fill:0.70028
+Tree segments found in treeinfo.txt file
+
+PERFORMING POINT QUERY queries/real_queries/Real-256-16000-qp.txt
+>>>>>>>>>>>>>>>>>
+Perform point queries
+Perform Query: 1
+Found: 10
+ID: 11653
+ID: 5253
+ID: 453
+ID: 8453
+ID: 6853
+ID: 3653
+ID: 13253
+ID: 10053
+ID: 14853
+ID: 2053
+Query Time: 0.367 ms
+Perform Query: 2
+Found: 10
+ID: 2602
+ID: 1002
+ID: 12202
+ID: 9002
+ID: 15402
+ID: 5802
+ID: 13802
+ID: 7402
+ID: 4202
+ID: 10602
+Query Time: 0.352 ms
+Average Query Time: 0.3595 ms
+
+PERFORMING NARROW RANGE QUERY queries/real_queries/Real-256-16000-qrn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 4
+Found: 10
+ID: 11653
+ID: 5253
+ID: 453
+ID: 8453
+ID: 6853
+ID: 3653
+ID: 13253
+ID: 10053
+ID: 14853
+ID: 2053
+Query Time: 0.491 ms
+Perform Query: 2
+Nodes accessed by range query: 5
+Found: 10
+ID: 2602
+ID: 1002
+ID: 12202
+ID: 9002
+ID: 15402
+ID: 5802
+ID: 13802
+ID: 7402
+ID: 4202
+ID: 10602
+Query Time: 0.492 ms
+Average Query Time: 0.4915 ms
+
+PERFORMING WIDE RANGE QUERY queries/real_queries/Real-256-16000-qrw.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed by range query: 4
+Found: 10
+ID: 11653
+ID: 5253
+ID: 453
+ID: 8453
+ID: 6853
+ID: 3653
+ID: 13253
+ID: 10053
+ID: 14853
+ID: 2053
+Query Time: 0.487 ms
+Perform Query: 2
+Nodes accessed by range query: 5
+Found: 10
+ID: 2602
+ID: 1002
+ID: 12202
+ID: 9002
+ID: 15402
+ID: 5802
+ID: 13802
+ID: 7402
+ID: 4202
+ID: 10602
+Query Time: 0.482 ms
+Average Query Time: 0.4845 ms
+
+PERFORMING KNN QUERY queries/real_queries/Real-256-16000-qn.txt
+>>>>>>>>>>>>>>>>>
+Perform Query: 1
+Nodes accessed for KNN query: 1029
+Results:
+Neighbor: 5253;	Distance: 0
+Neighbor: 11653;	Distance: 0
+Neighbor: 453;	Distance: 0
+Query Time: 0.657 ms
+Perform Query: 2
+Nodes accessed for KNN query: 1029
+Results:
+Neighbor: 1002;	Distance: 0
+Neighbor: 2602;	Distance: 0
+Neighbor: 12202;	Distance: 0
+Query Time: 1.019 ms
+Average Query Time: 0.838 ms
+
+##################
+ 

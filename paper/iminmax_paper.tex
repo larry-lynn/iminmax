@@ -1,0 +1,638 @@
+
+%% bare_conf.tex
+%% V1.3
+%% 2007/01/11
+%% by Michael Shell
+%% See:
+%% http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.7 or later) with an IEEE conference paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE! 
+%% User assumes all risk.
+%% In no event shall IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%
+%% File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
+%%                    bare_conf.tex, bare_jrnl.tex, bare_jrnl_compsoc.tex
+%%*************************************************************************
+
+% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. IEEE's font choices can trigger bugs that do  ***
+% *** not appear when using other class files.                            ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
+
+
+
+% Note that the a4paper option is mainly intended so that authors in
+% countries using A4 can easily print to A4 and see how their papers will
+% look in print - the typesetting of the document will not typically be
+% affected with changes in paper size (but the bottom and side margins will).
+% Use the testflow package mentioned above to verify correct handling of
+% both paper sizes by the user's LaTeX system.
+%
+% Also note that the "draftcls" or "draftclsnofoot", not "draft", option
+% should be used if it is desired that the figures are to be displayed in
+% draft mode.
+%
+\documentclass[conference]{IEEEtran}
+% Add the compsoc option for Computer Society conferences.
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it like:
+% \documentclass[conference]{../sty/IEEEtran}
+
+
+
+
+
+% Some very useful LaTeX packages include:
+% (uncomment the ones you want to load)
+
+
+% *** MISC UTILITY PACKAGES ***
+%
+%\usepackage{ifpdf}
+% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
+% compilation based on whether the output is pdf or dvi.
+% usage:
+% \ifpdf
+%   % pdf code
+% \else
+%   % dvi code
+% \fi
+% The latest version of ifpdf.sty can be obtained from:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/oberdiek/
+% Also, note that IEEEtran.cls V1.7 and later provides a builtin
+% \ifCLASSINFOpdf conditional that works the same way.
+% When switching from latex to pdflatex and vice-versa, the compiler may
+% have to be run twice to clear warning/error messages.
+
+
+
+
+
+
+% *** CITATION PACKAGES ***
+%
+%\usepackage{cite}
+% cite.sty was written by Donald Arseneau
+% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
+% \cite{} output to follow that of IEEE. Loading the cite package will
+% result in citation numbers being automatically sorted and properly
+% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
+% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
+% \cite will automatically add leading space, if needed. Use cite.sty's
+% noadjust option (cite.sty V3.8 and later) if you want to turn this off.
+% cite.sty is already installed on most LaTeX systems. Be sure and use
+% version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does
+% not currently provide for hyperlinked citations.
+% The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
+% The documentation is contained in the cite.sty file itself.
+
+
+
+
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  % \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at: 
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found as epslatex.ps or
+% epslatex.pdf at: http://www.ctan.org/tex-archive/info/
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+
+
+% *** MATH PACKAGES ***
+%
+\usepackage[cmex10]{amsmath}
+% A popular package from the American Mathematical Society that provides
+% many useful and powerful commands for dealing with mathematics. If using
+% it, be sure to load this package with the cmex10 option to ensure that
+% only type 1 fonts will utilized at all point sizes. Without this option,
+% it is possible that some math symbols, particularly those within
+% footnotes, will be rendered in bitmap form which will result in a
+% document that can not be IEEE Xplore compliant!
+%
+% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
+% thus preventing page breaks from occurring within multiline equations. Use:
+%\interdisplaylinepenalty=2500
+% after loading amsmath to restore such page breaks as IEEEtran.cls normally
+% does. amsmath.sty is already installed on most LaTeX systems. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
+
+
+
+
+
+% *** SPECIALIZED LIST PACKAGES ***
+%
+%\usepackage{algorithmic}
+% algorithmic.sty was written by Peter Williams and Rogerio Brito.
+% This package provides an algorithmic environment fo describing algorithms.
+% You can use the algorithmic environment in-text or within a figure
+% environment to provide for a floating algorithm. Do NOT use the algorithm
+% floating environment provided by algorithm.sty (by the same authors) or
+% algorithm2e.sty (by Christophe Fiorio) as IEEE does not use dedicated
+% algorithm float types and packages that provide these will not provide
+% correct IEEE style captions. The latest version and documentation of
+% algorithmic.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithms/
+% There is also a support site at:
+% http://algorithms.berlios.de/index.html
+% Also of interest may be the (relatively newer and more customizable)
+% algorithmicx.sty package by Szasz Janos:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithmicx/
+
+
+
+
+% *** ALIGNMENT PACKAGES ***
+%
+%\usepackage{array}
+% Frank Mittelbach's and David Carlisle's array.sty patches and improves
+% the standard LaTeX2e array and tabular environments to provide better
+% appearance and additional user controls. As the default LaTeX2e table
+% generation code is lacking to the point of almost being broken with
+% respect to the quality of the end results, all users are strongly
+% advised to use an enhanced (at the very least that provided by array.sty)
+% set of table tools. array.sty is already installed on most systems. The
+% latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/tools/
+
+
+%\usepackage{mdwmath}
+%\usepackage{mdwtab}
+% Also highly recommended is Mark Wooding's extremely powerful MDW tools,
+% especially mdwmath.sty and mdwtab.sty which are used to format equations
+% and tables, respectively. The MDWtools set is already installed on most
+% LaTeX systems. The lastest version and documentation is available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/mdwtools/
+
+
+% IEEEtran contains the IEEEeqnarray family of commands that can be used to
+% generate multiline equations as well as matrices, tables, etc., of high
+% quality.
+
+
+%\usepackage{eqparbox}
+% Also of notable interest is Scott Pakin's eqparbox package for creating
+% (automatically sized) equal width boxes - aka "natural width parboxes".
+% Available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox/
+
+
+
+
+
+% *** SUBFIGURE PACKAGES ***
+%\usepackage[tight,footnotesize]{subfigure}
+% subfigure.sty was written by Steven Douglas Cochran. This package makes it
+% easy to put subfigures in your figures. e.g., "Figure 1a and 1b". For IEEE
+% work, it is a good idea to load it with the tight package option to reduce
+% the amount of white space around the subfigures. subfigure.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at:
+% http://www.ctan.org/tex-archive/obsolete/macros/latex/contrib/subfigure/
+% subfigure.sty has been superceeded by subfig.sty.
+
+
+
+%\usepackage[caption=false]{caption}
+%\usepackage[font=footnotesize]{subfig}
+% subfig.sty, also written by Steven Douglas Cochran, is the modern
+% replacement for subfigure.sty. However, subfig.sty requires and
+% automatically loads Axel Sommerfeldt's caption.sty which will override
+% IEEEtran.cls handling of captions and this will result in nonIEEE style
+% figure/table captions. To prevent this problem, be sure and preload
+% caption.sty with its "caption=false" package option. This is will preserve
+% IEEEtran.cls handing of captions. Version 1.3 (2005/06/28) and later 
+% (recommended due to many improvements over 1.2) of subfig.sty supports
+% the caption=false option directly:
+%\usepackage[caption=false,font=footnotesize]{subfig}
+%
+% The latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
+% The latest version and documentation of caption.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/caption/
+
+
+
+
+% *** FLOAT PACKAGES ***
+%
+%\usepackage{fixltx2e}
+% fixltx2e, the successor to the earlier fix2col.sty, was written by
+% Frank Mittelbach and David Carlisle. This package corrects a few problems
+% in the LaTeX2e kernel, the most notable of which is that in current
+% LaTeX2e releases, the ordering of single and double column floats is not
+% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
+% single column figure to be placed prior to an earlier double column
+% figure. The latest version and documentation can be found at:
+% http://www.ctan.org/tex-archive/macros/latex/base/
+
+
+
+%\usepackage{stfloats}
+% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
+% the ability to do double column floats at the bottom of the page as well
+% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
+% LaTeX2e). It also provides a command:
+%\fnbelowfloat
+% to enable the placement of footnotes below bottom floats (the standard
+% LaTeX2e kernel puts them above bottom floats). This is an invasive package
+% which rewrites many portions of the LaTeX2e float routines. It may not work
+% with other packages that modify the LaTeX2e float routines. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/sttools/
+% Documentation is contained in the stfloats.sty comments as well as in the
+% presfull.pdf file. Do not use the stfloats baselinefloat ability as IEEE
+% does not allow \baselineskip to stretch. Authors submitting work to the
+% IEEE should note that IEEE rarely uses double column equations and
+% that authors should try to avoid such use. Do not be tempted to use the
+% cuted.sty or midfloat.sty packages (also by Sigitas Tolusis) as IEEE does
+% not format its papers in such ways.
+
+
+
+
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+%
+%\usepackage{url}
+% url.sty was written by Donald Arseneau. It provides better support for
+% handling and breaking URLs. url.sty is already installed on most LaTeX
+% systems. The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/misc/
+% Read the url.sty source comments for usage information. Basically,
+% \url{my_url_here}.
+
+
+
+
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\newcounter{mytempeqncnt}
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Evaluation of the iMinMax Algorithm for Indexing and Retrieval with High Dimensionality}
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+
+% conference papers do not typically use \thanks and this command
+% is locked out in conference mode. If really needed, such as for
+% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
+% after \documentclass
+
+% for over three affiliations, or if they all won't fit within the width
+% of the page, use this alternative format:
+% 
+\author{
+\IEEEauthorblockN{Hilarion Lynn$^1$,
+Cole Schock$^2$, and
+Liessman Sturlaugson$^3$}
+\IEEEauthorblockA{Department of Computer Science, Montana State University \\
+Bozeman, Montana 59717-3880 \\
+$^1$hilarionl@gmail.com \\
+$^2$dcolesch@gmail.com \\
+$^3$liessman.sturlaugson@cs.montana.edu}
+}
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+
+
+
+% make the title area
+\maketitle
+
+
+\begin{abstract}
+We have implemented and evaluated the iMinMax algorithm with point, range, and k-nearest neighbor queries on uniform, clustered, and real-life datasets of varying sizes.
+\end{abstract}
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the conference you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals/conferences frown on
+% math in the abstract anyway.
+
+% no keywords
+
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+\section{Introduction}
+% no \IEEEPARstart
+Many efficient indexing structures exist for storing and querying low-dimensional data, such as found in spatial applications, which typically need only 2 or 3 dimensions to represent objects in space. When viewing the data space over a set of features rather than spatial coordinates, the number of dimensions will usually substantially increase. Furthermore, the queries used by spatial applications are still relevant in the high-dimensional feature space, such as point, range, and nearest-neighbor (similarity) queries.
+
+However, many of these traditional indexing techniques efficient for low-dimensional data deteriorate as the number of dimensions increases, often becoming more expensive than sequential scan. To address this problem, several indexing techniques specifically meant for high-dimensional data have been developed.
+
+% This equation is up here so that it falls out onto the top of the second page:
+\begin{figure*}[htb]
+% ensure that we have normalsize text
+\normalsize
+% Store the current equation number.
+\setcounter{mytempeqncnt}{\value{equation}}
+% Set the equation number to one less than the one
+% desired for the first equation here.
+% The value here will have to changed if equations
+% are added or removed prior to the place these
+% equations are referenced in the main text.
+\setcounter{equation}{1}
+\begin{equation}
+q_j =
+\begin{cases}
+[j + \max_{i=1}^d x_{il}, j + x_{jh}] & \text{if } \min_{i=1}^d x_{il} + \theta \geq 1 - \max_{i=1}^d x_{il} \\
+[j + x_{jl}, j + \min_{i=1}^d x_{ih}] & \text{if } \min_{i=1}^d x_{ih} + \theta < 1 - \max_{i=1}^d x_{ih} \\
+[j + x_{jl}, j + x_{jh}]              & \text{otherwise}
+\end{cases}
+\end{equation}
+% Restore the current equation number.
+\setcounter{equation}{\value{mytempeqncnt}}
+% IEEE uses as a separator
+\hrulefill
+% The spacer can be tweaked to stop underfull vboxes.
+\vspace*{4pt}
+\end{figure*}
+
+\section{Related Work}
+Several of the recent approaches for indexing high-dimen-sional data map each data point to a one-dimensional index (real value) \cite{Yu:2004:QHD:988145.988146}. The benefit of mapping to a single, real-valued index is being able to reuse the data structures, such as B$^+$-trees, already available in commercial DMBS software.
+
+One such approach, called the Pyramid-Technique \cite{Berchtold:1998:PTB:276305.276318}, partitions a data space of $d$ dimensions into $2d$ hyper-pyramids, with the top of each pyramid meeting at the center of the data space. The index of each point has an integer part and a decimal part. The integer part refers to the pyramid in which the point can found, and the decimal part refers to the ``height'' of the point within that pyramid. For range queries, the algorithm calculates all the pyramids that the range intersects and searches the appropriate interval along the height within the pyramid. Although two points may be relatively far apart in the data space, because each point is indexed by a single real value, any number of points can potentially be mapped to the same index. Thus, the Pyramid-Technique must use a filter and refine strategy, generating a candidate set that guarantees the inclusion of all true positives and then using the actual feature vector of each point to remove the false positives.
+
+Following a similar strategy, the iMinMax algorithm, first presented in \cite{Ooi:2000:IES:335168.335219} and evaluated here, maps each point to the ``closest edge'' instead of explicitly partitioning the data space into pyramids. By mapping to axes instead of pyramids, they reduce the number of partitions from $2d$ to $d$. The simple mapping function was also intended to avoid more costly pyramid intersection calculations. The iMinMax algorithm has also been combined with the VA-file for an approximate indexing algorithm \cite{iminmaxvafile} by first applying the VA-file approach for dimensionality reduction.
+
+While designed with point and range queries in mind, the original implementations of the Pyramid-Technique and the iMinMax algorithm did not explicitly address k-nearest neighbor (KNN) queries. On the other hand, the original iDistance algorithm \cite{citeulike:343222}, later published with additional experiments \cite{citeulike:605413}, was specifically optimized for KNN queries. In this technique, a set of ``reference points'' are first placed throughout the data space. The algorithm then indexes each point based on its distance to the nearest reference point.
+
+\section{The iMinMax Algorithm}
+We now describe the iMinMax algorithm in more detail, along with its extension to KNN developed in \cite{iminmaxknn}.
+
+We assume the data is normalized such that each data point $x$ resides in a unit $d$-dimensional space. A data point $x$ is denoted as $x=(x_1,x_2,\ldots,x_d)$ where $x_i \in [0,1)$ $\forall i$. Let $x_{max} = \max_{i=1}^d x_i$ and $x_{min} = \min_{i=1}^d x_i$. Each point is mapped to a single dimensional index value $f(x)$ as follows:
+
+\begin{equation}
+f(x) =
+\begin{cases}
+d_{min} + x_{min}, & \text{if } x_{min} + \theta < 1 - x_{max} \\
+d_{max} + x_{max}, & \text{otherwise}
+\end{cases}
+\end{equation}
+
+The parameter $\theta$ can be tuned to account for skewed data distributions in which much of the data would otherwise be mapped to the same edge, resulting in a less efficient search through the B$^+$-tree. In the simple case when $\theta = 0$, each point is mapped to the axis of the closest edge and is appropriate for uniformly distributed data. When $\theta > 0$, the mapping function is biased toward the axis of the maximum value, while $\theta < 0$ biases it toward the axis of the minimum value.
+
+Range queries are first transformed into $d$ one-dimensional subqueries. The range query interval for the $j$th dimension, denoted $q_j$, is calculated by Equation 2. The variables $x_{il}$ and $x_{ih}$ represent the low and high bound, respectively, for the range interval in the $i$th dimension. In the original iMinMax paper \cite{Ooi:2000:IES:335168.335219}, they prove that the union of the results from the $d$ subqueries is guaranteed to return the set of all points found within the range, while no smaller interval on the subqueries can guarantee this. Moreover, they prove that at most $d$ subqueries must be performed. In fact, they prove that a subquery $q_i = [l_i, h_i]$ need not be evaluated if one of the following holds:
+\[(i) \min_{j=1}^d x_{jl} + \theta \geq 1 - \max_{j=1}^d x_{jl} \text{ and } h_i < \max_{j=1}^d x_{jl} \]
+\[(ii) \min_{j=1}^d x_{jh} + \theta > 1 - \max_{j=1}^d x_{jh} \text{ and } l_i > \min_{j=1}^d x_{jh} \]
+This occurs when the all the answers for a given query are along either the Max edge $(i)$ or the Min edge $(ii)$. Thus if either of these conditions hold, the answer set for $q_i$ is guaranteed to be empty and thus can be ignored.
+
+The original iMinMax paper did not address KNN queries. A na$\ddot{\text{i}}$ve approach that reuses the range query would be to just initialize a small range query around the query point and slowly increase the range window until at least $k$ points are found and then sort them by distance. However, choices of the initial range size and the increment for resizing the range could be inefficient depending on the data distribution and where the query point falls within that distribution.
+
+On the other hand, the KNN extension for iMinMax presented in \cite{iminmaxknn} uses a decreasing radius technique. The index of the query point $q$ is first calculated using Equation 1. The leaf containing the closest value to the index is then found. The leaves to the left and right are then searched as necessary to find an initial candidate set of $k$ neighbors. They note that, for iMinMax, if a point $v$ is mapped to the same axis as the query point, the difference between their iMinMax index values can be no greater than the Euclidean distance between the points. After finding a set of $k$ candidates, the candidate point furthest from the query point defines a range query. A subquery defined by that range is then performed on a remaining dimension. If a closer point is found, it replaces the current furthest point, and the range is reduced to the new furthest point. This process continues until all subqueries checking each dimension have been performed. The benefit of this algorithm is that the range never increases after the initial $k$ candidates are found and that each subquery has the potential of reducing the query range even further.
+
+The iMinMax($\theta$) algorithms for point, range, and KNN queries were implemented in C++. We used the STX B$^+$-tree \cite{stx} in our implementation and used the getoptpp command line parser \cite{get_opt} for scripting the experiments. The keys of the B$^+$-tree were the real-valued indices returned by iMinMax, while the values associated with the keys were indices of the actual points in an array stored in memory.
+
+\section{Datasets}
+As \cite{Bohm:2000:CMQ:357775.357776} points outs, the efficiency of an index-based querying algorithm depends on the number of dimensions, the number of points, and on the data distribution. The iMinMax algorithm was tested on 27 variations of three underlying datasets. Each dataset had three versions corresponding to increasing dimensionality: 16, 64, and 256 dimensions. Each dataset also had three versions corresponding to increasing number of data points. Lastly, each dataset came from one of three underlying distributions: uniform, clustered, and real-life datasets. Each dataset maintained four decimal place precision in each dimension for each point.
+
+\subsection{Uniform}
+The three sizes from the uniform dataset were 1K, 10K, and 100K. For each dataset size and for each dimensionality (16, 64, and 256), the points were placed uniformly randomly inside a unit hypercube.
+
+\subsection{Clustered}
+The three sizes for the clustered datasets were also 1K, 10K, and 100K. Each clustered dataset used 10 clusters. For each dataset size and for each dimensionality (16, 64, and 256), the locations of the 10 clusters were randomized.
+
+\subsection{Real-Life}
+The real-life dataset came from NASA's TRACE mission images. The three sizes for the clustered datasets were 160, 1600, and 16,000. For each dataset size and for each dimensionality (16, 64, and 256), the points were chosen randomly from the real-life dataset.
+
+\section{Results}
+The results will go here.
+
+\subsection{Uniform}
+\subsection{Clustered}
+\subsection{Real-Life}
+
+\section{Discussion}
+Some discussion will go here.
+
+% An example of a floating figure using the graphicx package.
+% Note that \label must occur AFTER (or within) \caption.
+% For figures, \caption should occur after the \includegraphics.
+% Note that IEEEtran v1.7 and later has special internal code that
+% is designed to preserve the operation of \label within \caption
+% even when the captionsoff option is in effect. However, because
+% of issues like this, it may be the safest practice to put all your
+% \label just after \caption rather than within \caption{}.
+%
+% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
+% option should be used if it is desired that the figures are to be
+% displayed while in draft mode.
+%
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=2.5in]{myfigure}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+%\caption{Simulation Results}
+%\label{fig_sim}
+%\end{figure}
+
+% Note that IEEE typically puts floats only at the top, even when this
+% results in a large percentage of a column being occupied by floats.
+
+
+% An example of a double column floating figure using two subfigures.
+% (The subfig.sty package must be loaded for this to work.)
+% The subfigure \label commands are set within each subfloat command, the
+% \label for the overall figure must come after \caption.
+% \hfil must be used as a separator to get equal spacing.
+% The subfigure.sty package works much the same way, except \subfigure is
+% used instead of \subfloat.
+%
+%\begin{figure*}[!t]
+%\centerline{\subfloat[Case I]\includegraphics[width=2.5in]{subfigcase1}%
+%\label{fig_first_case}}
+%\hfil
+%\subfloat[Case II]{\includegraphics[width=2.5in]{subfigcase2}%
+%\label{fig_second_case}}}
+%\caption{Simulation results}
+%\label{fig_sim}
+%\end{figure*}
+%
+% Note that often IEEE papers with subfigures do not employ subfigure
+% captions (using the optional argument to \subfloat), but instead will
+% reference/describe all of them (a), (b), etc., within the main caption.
+
+
+% An example of a floating table. Note that, for IEEE style tables, the 
+% \caption command should come BEFORE the table. Table text will default to
+% \footnotesize as IEEE normally uses this smaller font for tables.
+% The \label must come after \caption as always.
+%
+%\begin{table}[!t]
+%% increase table row spacing, adjust to taste
+%\renewcommand{\arraystretch}{1.3}
+% if using array.sty, it might be a good idea to tweak the value of
+% \extrarowheight as needed to properly center the text within the cells
+%\caption{An Example of a Table}
+%\label{table_example}
+%\centering
+%% Some packages, such as MDW tools, offer better commands for making tables
+%% than the plain LaTeX2e tabular which is used here.
+%\begin{tabular}{|c||c|}
+%\hline
+%One & Two\\
+%\hline
+%Three & Four\\
+%\hline
+%\end{tabular}
+%\end{table}
+
+
+% Note that IEEE does not put floats in the very first column - or typically
+% anywhere on the first page for that matter. Also, in-text middle ("here")
+% positioning is not used. Most IEEE journals/conferences use top floats
+% exclusively. Note that, LaTeX2e, unlike IEEE journals/conferences, places
+% footnotes above bottom floats. This can be corrected via the \fnbelowfloat
+% command of the stfloats package.
+
+
+
+\section{Conclusion}
+The conclusion will go here.
+
+
+% conference papers do not normally have an appendix
+
+
+% use section* for acknowledgement
+%\section*{Acknowledgment}
+
+
+%The authors would like to thank...
+
+
+
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+\bibliographystyle{plain}
+\bibliography{refs}
+
+
+% that's all folks
+\end{document}
+
+

@@ -1,0 +1,31 @@
+1) Command line parsing
+Uses a library written by Daniel Gutson, retrieved from
+http://getoptpp.googlecode.com
+
+2) CSV parsing
+Adapted from code written by Jonathan Leffler,
+Retrieved from
+http://stackoverflow.com/questions/415515/how-can-i-read-and-manipulate-csv-file-data-in-c
+
+3) Git repository setup and configuration
+Credit to James World
+https://help.ubuntu.com/community/Git
+
+4) STX B+ tree
+Developed by Timo Bingmann
+https://idlebox.net/2007/stx-btree/
+
+5) Linux C++ timing
+Adapted from code written by Dennis Muhlestein
+Retrieved from
+http://allmybrain.com/2008/06/10/timing-cc-code-on-linux/
+
+6) Sequential Scan Code
+Credit to Tim Wylie, Mike Schuh, Melissa Dale
+Retrieved from 
+http://code.google.com/p/idistance/wiki/SequentialScan
+
+7) Usage function
+Credit to unknown author
+Code adapted from sample code found on
+http://www.cplusplus.com/doc/tutorial/files/

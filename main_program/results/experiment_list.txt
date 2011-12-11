@@ -1,0 +1,11 @@
+Experiment 1: Tree & index generation stats.  Index generation time includes I/O (read time of datafile); Tree generation time does not include I/O.
+
+Experiment 2: Tree & index generation stats.  Neither Tree nor Index generation time include I/O.
+
+Experiment 3: Point query and KNN query stats.  Exception for 1 data set.
+
+Experiment 4: Point, Range & KNN query stats.  Exception for 1 range query.
+
+Experiment 5: Point, Range & KNN query stats.  Queries fixed.  No exceptions.
+
+Experiment 6: Range queries with incrementally changing values of theta against a distribution with a single cluster.
