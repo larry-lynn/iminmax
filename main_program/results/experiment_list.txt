@@ -9,3 +9,9 @@ Experiment 4: Point, Range & KNN query stats.  Exception for 1 range query.
 Experiment 5: Point, Range & KNN query stats.  Queries fixed.  No exceptions.
 
 Experiment 6: Range queries with incrementally changing values of theta against a distribution with a single cluster.
+
+Experiment 7: Same as experiment 5, but with extra pruning logic from Liessman in the KNN queries
+
+Experiment 8: Execute multiple wide range queries against a skewed clustered distribution
+
+Experiment 9: Execute multiple narrow range queries against a skewed clustered distribution

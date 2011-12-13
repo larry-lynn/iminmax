@@ -1,0 +1,589 @@
+Changing directory to that of main program
+Building tree, clustered data, theta = -1.0
+Tree Build Time: 191.388 ms
+Index Build Time [includes tree build time]: 309.184 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = -1.0
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16477.6 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10988.2 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4794.57 ms
+Average Query Time: 10753.5 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = -0.9
+Tree Build Time: 191.773 ms
+Index Build Time [includes tree build time]: 309.92 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = -0.9
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16472 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10980.6 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4806.19 ms
+Average Query Time: 10752.9 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = -0.8
+Tree Build Time: 191.69 ms
+Index Build Time [includes tree build time]: 310.361 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = -0.8
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16507.1 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 11002.6 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4797.03 ms
+Average Query Time: 10768.9 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = -0.7
+Tree Build Time: 192.791 ms
+Index Build Time [includes tree build time]: 310.762 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = -0.7
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16454.1 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10953.8 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4794.59 ms
+Average Query Time: 10734.2 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = -0.6
+Tree Build Time: 191.582 ms
+Index Build Time [includes tree build time]: 309.356 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = -0.6
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16442 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10953.7 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4801.79 ms
+Average Query Time: 10732.5 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = -0.5
+Tree Build Time: 191.435 ms
+Index Build Time [includes tree build time]: 309.443 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = -0.5
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16369.9 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10951.4 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4776.62 ms
+Average Query Time: 10699.3 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = -0.4
+Tree Build Time: 191.519 ms
+Index Build Time [includes tree build time]: 310.171 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = -0.4
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16445.2 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10940.9 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4782.28 ms
+Average Query Time: 10722.8 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = -0.3
+Tree Build Time: 191.699 ms
+Index Build Time [includes tree build time]: 310.358 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = -0.3
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16449.7 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10962 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4775.42 ms
+Average Query Time: 10729 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = -0.2
+Tree Build Time: 191.269 ms
+Index Build Time [includes tree build time]: 309.079 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = -0.2
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16455.5 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10973.5 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4789.07 ms
+Average Query Time: 10739.3 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = -0.1
+Tree Build Time: 191.35 ms
+Index Build Time [includes tree build time]: 310.071 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = -0.1
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16433.2 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10959.7 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4789.39 ms
+Average Query Time: 10727.4 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = 0.0
+Tree Build Time: 191.278 ms
+Index Build Time [includes tree build time]: 309.952 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = 0.0
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16471.3 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10989.8 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4806.16 ms
+Average Query Time: 10755.7 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = 0.1
+Tree Build Time: 191.428 ms
+Index Build Time [includes tree build time]: 309.229 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = 0.1
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16455.6 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10939.7 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4814.86 ms
+Average Query Time: 10736.7 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = 0.2
+Tree Build Time: 192.173 ms
+Index Build Time [includes tree build time]: 309.974 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = 0.2
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16447.1 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10964.8 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4782.94 ms
+Average Query Time: 10731.6 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = 0.3
+Tree Build Time: 191.323 ms
+Index Build Time [includes tree build time]: 309.192 ms
+Tree statistics: 
+Items:100000
+Nodes:8329
+Leaves:7795
+InnerNodes:534
+Levels:5
+Average Fill:0.610892
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = 0.3
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16481.7 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 10983.7 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4784.6 ms
+Average Query Time: 10750 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = 0.4
+Tree Build Time: 192.027 ms
+Index Build Time [includes tree build time]: 309.862 ms
+Tree statistics: 
+Items:100000
+Nodes:8331
+Leaves:7797
+InnerNodes:534
+Levels:5
+Average Fill:0.610736
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = 0.4
+Perform Query: 1
+Nodes accessed by range query: 895
+Found: 738
+Query Time: 16517.7 ms
+Perform Query: 2
+Nodes accessed by range query: 737
+Found: 801
+Query Time: 11031.1 ms
+Perform Query: 3
+Nodes accessed by range query: 479
+Found: 713
+Query Time: 4798.95 ms
+Average Query Time: 10782.6 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = 0.5
+Tree Build Time: 193.3 ms
+Index Build Time [includes tree build time]: 311.288 ms
+Tree statistics: 
+Items:100000
+Nodes:8273
+Leaves:7736
+InnerNodes:537
+Levels:5
+Average Fill:0.615551
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = 0.5
+Perform Query: 1
+Nodes accessed by range query: 885
+Found: 738
+Query Time: 16244.3 ms
+Perform Query: 2
+Nodes accessed by range query: 716
+Found: 801
+Query Time: 10388.6 ms
+Perform Query: 3
+Nodes accessed by range query: 448
+Found: 713
+Query Time: 4002.11 ms
+Average Query Time: 10211.7 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = 0.6
+Tree Build Time: 195.137 ms
+Index Build Time [includes tree build time]: 315.436 ms
+Tree statistics: 
+Items:100000
+Nodes:7949
+Leaves:7440
+InnerNodes:509
+Levels:5
+Average Fill:0.640041
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = 0.6
+Perform Query: 1
+Nodes accessed by range query: 323
+Found: 738
+Query Time: 2193.06 ms
+Perform Query: 2
+Nodes accessed by range query: 66
+Found: 801
+Query Time: 4.458 ms
+Perform Query: 3
+Nodes accessed by range query: 328
+Found: 713
+Query Time: 2458.58 ms
+Average Query Time: 1552.03 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = 0.7
+Tree Build Time: 193.238 ms
+Index Build Time [includes tree build time]: 311.172 ms
+Tree statistics: 
+Items:100000
+Nodes:8278
+Leaves:7746
+InnerNodes:532
+Levels:5
+Average Fill:0.614757
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = 0.7
+Perform Query: 1
+Nodes accessed by range query: 454
+Found: 738
+Query Time: 4547.98 ms
+Perform Query: 2
+Nodes accessed by range query: 709
+Found: 801
+Query Time: 10863 ms
+Perform Query: 3
+Nodes accessed by range query: 878
+Found: 713
+Query Time: 17103.1 ms
+Average Query Time: 10838 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = 0.8
+Tree Build Time: 191.811 ms
+Index Build Time [includes tree build time]: 310.437 ms
+Tree statistics: 
+Items:100000
+Nodes:8286
+Leaves:7754
+InnerNodes:532
+Levels:5
+Average Fill:0.614122
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = 0.8
+Perform Query: 1
+Nodes accessed by range query: 496
+Found: 738
+Query Time: 5476.42 ms
+Perform Query: 2
+Nodes accessed by range query: 722
+Found: 801
+Query Time: 11575.4 ms
+Perform Query: 3
+Nodes accessed by range query: 889
+Found: 713
+Query Time: 17516.8 ms
+Average Query Time: 11522.9 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = 0.9
+Tree Build Time: 193.547 ms
+Index Build Time [includes tree build time]: 311.509 ms
+Tree statistics: 
+Items:100000
+Nodes:8283
+Leaves:7757
+InnerNodes:526
+Levels:5
+Average Fill:0.613885
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = 0.9
+Perform Query: 1
+Nodes accessed by range query: 501
+Found: 738
+Query Time: 5412.54 ms
+Perform Query: 2
+Nodes accessed by range query: 722
+Found: 801
+Query Time: 11484.3 ms
+Perform Query: 3
+Nodes accessed by range query: 889
+Found: 713
+Query Time: 17405.3 ms
+Average Query Time: 11434 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>
+Building tree, clustered data, theta = 1.0
+Tree Build Time: 192.251 ms
+Index Build Time [includes tree build time]: 309.991 ms
+Tree statistics: 
+Items:100000
+Nodes:8283
+Leaves:7757
+InnerNodes:526
+Levels:5
+Average Fill:0.613885
+Tree segments found in treeinfo.txt file
+
+Running range query with theta = 1.0
+Perform Query: 1
+Nodes accessed by range query: 501
+Found: 738
+Query Time: 5461.2 ms
+Perform Query: 2
+Nodes accessed by range query: 722
+Found: 801
+Query Time: 11486.5 ms
+Perform Query: 3
+Nodes accessed by range query: 889
+Found: 713
+Query Time: 17413.8 ms
+Average Query Time: 11453.9 ms
+
+>>>>>>>>>>>>>>>>>>>>>>>>

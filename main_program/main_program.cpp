@@ -117,14 +117,26 @@ int main(int argc, char* argv[])
 		
 	  for(i = 0; i < (int)query.size(); ++i){
 	    cout << "Perform Query: " << (i + 1) << endl;
-		//start timer for this query
-		gettimeofday(&start, NULL);
-	    results = iminmax.point_query(query[i].point);
-		//stop timer
-		gettimeofday(&stop, NULL); // ignoring the 2nd parameter which is the timezone
-		// get time
-		timersub(&stop, &start, &result);
-		//push time into vector
+		if(s)
+		{
+			//start timer for this query
+			gettimeofday(&start, NULL);
+			results = iminmax.sequential_point_query(query[i].point);
+			//stop timer
+			gettimeofday(&stop, NULL); // ignoring the 2nd parameter which is the timezone
+			// get time
+			timersub(&stop, &start, &result);
+		}
+		else
+		{
+			//start timer for this query
+			gettimeofday(&start, NULL);
+			results = iminmax.point_query(query[i].point);
+			//stop timer
+			gettimeofday(&stop, NULL); // ignoring the 2nd parameter which is the timezone
+			// get time
+			timersub(&stop, &start, &result);
+		}
 		query_times.push_back(result.tv_sec * 1000.0 + result.tv_usec/1000.0);
 
 	    cout << "Found: " << (long)results.size() << endl;
@@ -168,15 +180,28 @@ int main(int argc, char* argv[])
 	    cout << "Perform Query: " << ( (i/2) + 1) << endl;
 	    lowerCorner = query[i];
 	    upperCorner = query[i+1];
-		//start timer for this query
-		gettimeofday(&start, NULL);
-		//get results for query
-	    results = iminmax.range_query(lowerCorner.point, upperCorner.point);
-		//stop timer
-		gettimeofday(&stop, NULL); // ignoring the 2nd parameter which is the timezone
-		// get time
-		timersub(&stop, &start, &result);
-		//push time into vector
+		if(s)
+		{
+			//start timer for this query
+			gettimeofday(&start, NULL);
+			//get results for query
+			results = iminmax.sequential_range_query(lowerCorner.point, upperCorner.point);
+			//stop timer
+			gettimeofday(&stop, NULL); // ignoring the 2nd parameter which is the timezone
+			// get time
+			timersub(&stop, &start, &result);
+		}
+		else
+		{
+			//start timer for this query
+			gettimeofday(&start, NULL);
+			//get results for query
+			results = iminmax.range_query(lowerCorner.point, upperCorner.point);
+			//stop timer
+			gettimeofday(&stop, NULL); // ignoring the 2nd parameter which is the timezone
+			// get time
+			timersub(&stop, &start, &result);
+		}
 		query_times.push_back(result.tv_sec * 1000.0 + result.tv_usec/1000.0);
 
 	    cout << "Found: " << (long)results.size() << endl;
@@ -213,15 +238,28 @@ int main(int argc, char* argv[])
 	  for(i = 0; i < (int)query.size(); ++i){
 	    cout << "Perform Query: " << (i + 1) << endl;
 	    center = query[i];
-		//start timer for this query
-		gettimeofday(&start, NULL);
-		//get results for query
-	    resultSet = iminmax.knn_query(center.point, knn);
-		//stop timer
-		gettimeofday(&stop, NULL); // ignoring the 2nd parameter which is the timezone
-		// get time
-		timersub(&stop, &start, &result);
-		//push time into vector
+		if(s)
+		{
+			//start timer for this query
+			gettimeofday(&start, NULL);
+			//get results for query
+			resultSet = iminmax.sequential_knn_query(center.point, knn);
+			//stop timer
+			gettimeofday(&stop, NULL); // ignoring the 2nd parameter which is the timezone
+			// get time
+			timersub(&stop, &start, &result);
+		}
+		else
+		{
+			//start timer for this query
+			gettimeofday(&start, NULL);
+			//get results for query
+			resultSet = iminmax.knn_query(center.point, knn);
+			//stop timer
+			gettimeofday(&stop, NULL); // ignoring the 2nd parameter which is the timezone
+			// get time
+			timersub(&stop, &start, &result);
+		}
 		query_times.push_back(result.tv_sec * 1000.0 + result.tv_usec/1000.0);
 
 	    cout << "Results:" << endl;
@@ -241,16 +279,11 @@ int main(int argc, char* argv[])
 	//MODE 5: prepocess data and display optimal theta based on median point
 	else if(p)
 	{
-		if((loadtf.compare("unset")) == 0)
+		if((datafile.compare("unset")) == 0)
 		{
 			throw 10;
 		}
-		string tree_data_file = loadtf;
-		string iminmax_data_file = loadtf;
-		tree_data_file.append(".tree");
-		iminmax_data_file.append(".data");
-		iminmax.load_tree( tree_data_file.c_str() );
-		iminmax.load_data( iminmax_data_file.c_str() );
+		iminmax_data = iminmax.parse_csv_gen_index(datafile);
 		cout << "Optimal Theta (exact median): " << iminmax.get_theta(iminmax.get_iminmax_median()) << endl;
 		cout << "Optimal Theta (approximate median): " << iminmax.get_theta(iminmax.get_iminmax_median_approximate()) << endl;
 	}
@@ -332,7 +365,7 @@ int main(int argc, char* argv[])
 				cout << "Illegal arg combination for range query; need --qr and --loadtf" << endl;
 				break;
 			case 10:
-				cout << "Illegal arg combination for preprocessing; need -p and --loadtf" << endl;
+				cout << "Illegal arg combination for preprocessing; need -p and --datafile" << endl;
 				break;
 
 

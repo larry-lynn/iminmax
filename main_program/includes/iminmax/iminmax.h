@@ -522,6 +522,7 @@ public:
 		vector<iminmax_data_element> results;
 		double key = gen_iminmax_index(point);
 		vector<int> candidate_indices;
+		stx::CountQueryNodes("Start");
 		btree_mm::iterator b_iter;
 		b_iter = btree.find(key);
 		bool point_match;
@@ -551,6 +552,8 @@ public:
 			}
 			b_iter++;
 		}
+		cout << "Nodes accessed for point query: " << stx::CountQueryNodes("Get") << endl;	
+	
 		return results;
 	}
 	/*********************************Cole's Point Query***************************************/
@@ -762,20 +765,90 @@ public:
 			double dMax;
 			double min;
 			double max;
-                        if ( (long)resultSet.size() == 0){
-			  // degenerate case; found no neighbors in first partition
-			  dMax = 0.5;
-			  min = i;
-			  max = i + 1;
+            if ( (long)resultSet.size() == 0) {
+				// degenerate case; found no neighbors in first partition
+				dMax = 0.5;
+				min = i;
+				max = i + 1;
 			}
 			else {
-			  dMax = resultSet[(int)resultSet.size() - 1].distance;
-			  min = (point[i] - dMax > 0.0) ? i + (point[i] - dMax) : i;
-			  max = (point[i] + dMax < 1.0) ? i + (point[i] + dMax) : i + 1.0;
-			}			
+				dMax = resultSet[(int)resultSet.size() - 1].distance;
+				
+				double minLow = 1.0;
+				double maxLow = 0.0;
+				double minHigh = 1.0;
+				double maxHigh = 0.0;
+				
+				// Used for Theorem 2 and Cases 1 & 2 of Equation 1:
+				for (int j = 0; j < dimensions; j++)
+				{
+					// Find min and max in each dimension:
+					double lowerBound = (point[j] - dMax > 0.0) ? (point[j] - dMax) : 0.0;
+					double upperBound = (point[j] + dMax < 1.0) ? (point[j] + dMax) : 1.0;
 
+					// Find the max of the lower bound:
+					if (lowerBound > maxLow)
+					{
+						maxLow = lowerBound;
+					}
+					// Find the min of the lower bound:
+					if (lowerBound < minLow)
+					{
+						minLow = lowerBound;
+					}
+					// Find the max of the upper bound:
+					if (upperBound > maxHigh)
+					{
+						maxHigh = upperBound;
+					}
+					// Find the min of the upper bound:
+					if (upperBound < minHigh)
+					{
+						minHigh = upperBound;
+					}
+				}
+				
+				min = (point[i] - dMax > 0.0) ? (point[i] - dMax) : 0.0;
+				max = (point[i] + dMax < 1.0) ? (point[i] + dMax) : 1.0;
+
+				// For Theorem #2:
+				bool maxEdge = ((minLow + theta) >= (1 - maxLow));
+				bool minEdge = ((minHigh + theta) < (1 - maxHigh));
+		
+				// Theorem #2:
+				if ((maxEdge && (max < maxLow)) ||
+					(minEdge && (min > minHigh)))
+				{
+					//cout << "Evoking theorem #2 - skipping subquery " << i << endl;
+					continue;
+				}
+
+				// Equation 1:
+				if (maxEdge)
+				{
+					// i is the integer part, lower/upperCorner is the decimal part:
+					//candidateSet = range_subquery(i + maxLow, i + upperCorner[i]);
+					min = i + maxLow;
+					max = i + max;
+					
+				}
+				else if (minEdge)
+				{
+					// i is the integer part, lower/upperCorner is the decimal part:
+					//candidateSet = range_subquery(i + lowerCorner[i], i + minHigh);
+					min = i + min;
+					max = i + minHigh;
+				}			
+				else
+				{
+					// i is the integer part, lower/upperCorner is the decimal part:
+					//candidateSet = range_subquery(i + lowerCorner[i], i + upperCorner[i]);
+					min = i + min;
+					max = i + max;
+				}			
+			}
 			//cout << i << ": [" << min << "," << max << "]" << endl;
-						
+
 			// Find points in the range subquery:
 			vector<iminmax_data_element> candidateSet = range_subquery(min, max);
 			// Refine the candidates from the subquery:

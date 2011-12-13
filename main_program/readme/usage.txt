@@ -108,14 +108,13 @@ execution modes follows.
 			to calculate the median of the data and 
 			determin the optimal value of theta.
 			Must be used in combination with --datafile.
-			NOT CURRENTLY IMPLEMENTED.
 
 	  -s		Boolean switch.  Takes no additional args.
 	  		Instructs the progam to perform a query using
 			a sequential search alogrithm rather than
 			the standard iMinMax algorithm.  Used for 
 			performance comparisons against the standard
-			algorithms.  NOT CURRENTLY IMPLEMENTED
+			algorithms.
 
 	  EXECUTION MODES
 
@@ -128,7 +127,7 @@ execution modes follows.
 	     Build args may not be passed
 	     May not be mixed with other query args
 
-	  3) Point Query
+	  3) Range Query
 	     Requires the --qr and --loadtf args
 	     Build args may not be passed
 	     May not be mixed with other query args
