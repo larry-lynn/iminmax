@@ -34,6 +34,7 @@ It is used as a key for later insertion into the B+ tree
 struct iminmax_data_element { string label; vector<double> point; double iminmax_index; };
 ```
 
+![iMinMax Data Element](/images/iminmax-element.png)
 http://iminmax.googlecode.com/git/images/iminmax-element.png
 
 iminmax_data
