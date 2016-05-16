@@ -20,9 +20,16 @@ The second primary data structure
 
 ### iminmax_data_element
 
-'label' is used to store the identifier for the point. For our data, this is an integer, usually corresponding to the sequence of the point in the input file. But it could be any arbitrary string: '1.23', 'foo' or 'Holy Hand Grenade'
-'point' is a vector of doubles. This vector stores the coordinates of the point in an N dimensional space
-'iminmax_index' is a positive real number. It stored the value obtained by running the iMinMax index algorithm on the N dimensional point. It is used as a key for later insertion into the B+ tree
+* 'label' is used to store the identifier for the point. 
+For our data, this is an integer, usually corresponding to the 
+sequence of the point in the input file. 
+But it could be any arbitrary string: '1.23', 'foo' or 'Holy Hand Grenade'
+* 'point' is a vector of doubles. This vector stores the coordinates 
+of the point in an N dimensional space
+* 'iminmax_index' is a positive real number. It stored the value 
+obtained by running the iMinMax index algorithm on the N dimensional point. 
+It is used as a key for later insertion into the B+ tree
+
 struct iminmax_data_element { string label; vector<double> point; double iminmax_index; };
 
 http://iminmax.googlecode.com/git/images/iminmax-element.png
