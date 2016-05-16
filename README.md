@@ -17,3 +17,5 @@ This project is based primarily on the work published in the following 2 papers:
 4. iMinMax K nearest neighbor queries  
 5. variable values of a master control knob, theta 
 6. search for optimal theta through the use of a distribution median
+
+![Range Query theta 0](/images/range-query-theta-0-v3.png)
