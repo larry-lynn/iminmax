@@ -18,4 +18,6 @@ This project is based primarily on the work published in the following 2 papers:
 5. variable values of a master control knob, theta 
 6. search for optimal theta through the use of a distribution median
 
+Documentation can be found in the [wikis](/wikis/README.md) subdirectory 
+
 ![Range Query theta 0](/images/range-query-theta-0-v3.png)
