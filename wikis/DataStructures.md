@@ -79,7 +79,6 @@ for(i = 0; i < (long)iminmax_data.size() ; ++i){
 ```
 
 ![iminmax-btree](/images/iminmax-btree.png)
-http://iminmax.googlecode.com/git/images/iminmax-btree.png
 
 Note: for these data structures to work together correctly, 
 it is essential that the vector index values in iminmax_data match up 
