@@ -1,0 +1,178 @@
+## Introduction
+
+We've chosen a command line interface to comply with the requirements 
+of the assignment and to make the program easily scriptable.
+
+## Details
+
+Guidance on the proper use of the available command line arguments is 
+contained in a usage function. The usage function is called if the 
+program is run with no command line arguments.
+
+```Bash
+IMINAX INDEXING AND QUERY PROGRAM
+
+This program accepts a number of command line arguments and command
+line switches.  Not all combinations of args and switches are legal.
+The legal combinations of switches and args indicate program execution
+modes. A list of args and their function as well as an overview of the
+execution modes follows.
+
+	  COMMAND LINE ARGUMENTS
+
+
+	  -b		Boolean switch.  Takes no additional args.
+	  		Build Tree and main iminmax_data structure.
+	  		This switch must be used with the followin args
+			--datafile and --savetf
+	  
+	  --datafile	Argument takes an extra string parameter.
+	  		Used to indicate an input data file in CSV
+			format.  The input data file contains lists
+			of real numbers between 0 and 1 that represent
+			points in a multidimensional space.  This arg
+			must be used with -b and --savetf
+			
+	  --savetf	Argument takes an extra string parameter.
+	  		Used to indicate a base file name to be used
+			to save serialized binary data of the B+ tree
+			and the main iminmax_data data structure.
+			The serialized data will be loaded and re-used
+			for future queries.  This arg must be used in
+			combination with -b and --datafile
+
+			IMPORTANT NOTE: by convention, the program will
+			append '.data' and '.tree' to the filename
+			specified by --savetf.  So the names of files on
+			disk will not match the filename specifed on the
+			command line.  --loadtf should also uses this 
+			convention, so the file specified by --loadtf
+			should exactly match the file originally 
+			specified by --savetf
+
+	  --loadtf	Argument takes an extra string parameter.
+	  		Used to indicate a base file name to be used
+			to load serialized binary data to restore
+			the 2 main data structures in order to
+			perform queries.
+
+			IMPORTANT NOTE: by convention, the program will
+			append '.data' and '.tree' to the filename
+			specified by --loadtf.  So the names of files on
+			disk will not match the filename specifed on the
+			command line.  --savetf uses this convention as
+			well.  So the filename used by --loadtf should
+			exactly match the filename passed to --savetf.
+
+	  --qp		Argument takes an extra string parameter.
+	  		Argument indicates that the user will perform
+			one or more point queries.  The string parameter
+			corresponds to an input query file containing
+			a list of point queries to be performed.
+			--qp must be used in combination with --loadtf.
+
+	  --qr		Argument takes an extra string parameter.
+	  		Argument indicates that the user will perform
+			one or more range queries.  The string parameter
+			corresponds to an input query file containing
+			a list of range queries to be performed.
+			For N range queries, there must be 2N rows
+			in the input query file.  --qr must be used in 
+			combination with --loadtf.
+
+	  --qn		Argument takes an extra string parameter.
+	  		Argument indicates that the user will perform
+			one or more KNN queries.  The string parameter
+			corresponds to an input query file containing
+			a list of point queries to be performed.
+			--qn must be used in combination with --loadtf
+			and --knn.
+
+	  --knn		Argument takes an extra integer parameter.
+	  		Argument is used with a K Nearest Neighbor
+			query and indicates the number of neighbors
+			that the user wishes to search for.  --knn
+			must be used in combination with --loadtf and
+			--qn
+
+	  --theta	Argument takes an extra double precision float param.
+	  		This specifies the master control variable for
+			the iMinMax indexing algorithim.  It is also used
+			in all queries.  --theta may be optionally used
+			with every execution mode except preprocessing
+
+			IMPORTANT NOTE 1: Theta is essential to this program
+			if not specified, a default vaule of 0.0 will
+			be used.
+
+			IMPORTANT NOTE 2: The value of theta used to create 
+			the index must correspond exactly to the value
+			of theta used in a query, otherwise inaccruate 
+			results will be obtained.
+
+	  -v		Boolean switch.  Takes no additional args.
+	  		Instructs the program to produce verbose output.
+			This flag can be used with every mode.
+
+	  -p		Boolean switch.  Takes no additional args.
+	  		Instructs the program to enter the preprocessing
+			mode.  In this mode the program willa attempt
+			to calculate the median of the data and 
+			determin the optimal value of theta.
+			Must be used in combination with --datafile.
+
+	  -s		Boolean switch.  Takes no additional args.
+	  		Instructs the progam to perform a query using
+			a sequential search alogrithm rather than
+			the standard iMinMax algorithm.  Used for 
+			performance comparisons against the standard
+			algorithms.
+
+	  EXECUTION MODES
+
+	  1) Build Tree and Index
+	     Requires the -b, --datafile and --savetf args
+	     Query args may not be passed
+
+	  2) Point Query
+	     Requires the --qp and --loadtf args
+	     Build args may not be passed
+	     May not be mixed with other query args
+
+	  3) Range Query
+	     Requires the --qr and --loadtf args
+	     Build args may not be passed
+	     May not be mixed with other query args
+
+	  4) KNN Query
+	     Requires the --qn, --knn  and --loadtf args
+	     Build args may not be passed
+	     May not be mixed with other query args
+
+	  5) Preprocessing
+	     Requires the -p flage and the --datafile arg
+	     No other build or query args may be passed
+	     NOT CURRENTLY IMPLEMENTED
+	     
+	  EXAMPLES
+
+
+    ./main_program -b --datafile data/2d_points.csv --savetf tree2
+
+Load 2 dimensional test data, perform the iMinMax indexing algorithm, 
+build the B+ tree, then save the 2 main data structures (the B+ tree
+and iminmax_data) to tree2.tree and tree2.data, respectively
+
+    ./main_program --loadtf tree2 --qr test-queries/test_range_query_2.csv
+
+Load tree2.tree and tree2.data constructed in the previous example.  
+Repopulate the main data structures from the binary serialized data.
+Once the data is back in memory, perform the 2 range queries specified
+in the range query input file test_range_query_2.csv
+
+	  PROGRAMMING CREDITS
+
+
+See main_program/readme/credits.txt
+```
+
