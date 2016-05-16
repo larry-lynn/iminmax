@@ -1,6 +1,6 @@
-# Or, you'll never guess what happened on the way to the presentation
+## Or, you'll never guess what happened on the way to the presentation
 
-## CSV Parsing
+### CSV Parsing
 
 Many scripting languages such as PHP and Python have built in or 
 widely adopted libraries for reading and parsing CSV files. 
@@ -55,7 +55,7 @@ std::vector parse_csv_gen_index(std::string datafile) {
 
 ```
 
-## Irregularity of input data
+### Irregularity of input data
 
 Some of the input data files had the terminating newline 
 character cut off. Others contained an extra empty line at the 
@@ -65,7 +65,7 @@ and seg faulted on some and threw dimensional mismatch errors on others.
 It was the dark side of the 'roll your own' approach and it cost 
 us some development time making the parser more robust.
 
-## Serialization of iminmax_data
+### Serialization of iminmax_data
 
 We encountered difficulties in correctly serializing and saving our 
 secondary data structure iminmax_data. Attempts to use the most 
@@ -77,7 +77,7 @@ were stored and the null characters terminating these strings.
 The solution involved more complex save and load methods that 
 preserved additional meta-data about size and dimensionality of the data
 
-## Serialization and re-compillation
+### Serialization and re-compillation
 
 Object serialization introduced extra complexity and an extra 
 point of failure. One pitfall that we encountered was if the 
@@ -87,7 +87,7 @@ changes to the tree or iminmax_data. If the compiled binary
 and the serialized data were out of sync, undefined behavior 
 followed along with difficult to track down bugs.
 
-## Unreliable success modes
+### Unreliable success modes
 
 Our choices of data structures made it very important to keep 
 iminmax_data and the tree tightly coupled. A mistake we made was 
@@ -110,8 +110,9 @@ This is what we need:
 for(i = 0; i < (long)iminmax_data.size() ; ++i){ 
     btree.insert(iminmax_data[i].iminmax_index, i); 
 }
+```
 
-## Rare Corner Cases
+### Rare Corner Cases
 
 The iMinMax KNN algorithm attempts to establish a candidate set in 
 the partition of the central search point, than improve on it by using 
