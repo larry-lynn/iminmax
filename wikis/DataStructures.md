@@ -77,7 +77,12 @@ for(i = 0; i < (long)iminmax_data.size() ; ++i){
     btree.insert(iminmax_data[i].iminmax_index, i); 
 }
 ```
+
+![iminmax-btree](/images/iminmax-btree.png)
 http://iminmax.googlecode.com/git/images/iminmax-btree.png
 
-Note: for these data structures to work together correctly, it is essential that the vector index values in iminmax_data match up with the key/value payload in the B+ tree. Any mismatch causes serious bugs that are difficult to track down.
+Note: for these data structures to work together correctly, 
+it is essential that the vector index values in iminmax_data match up 
+with the key/value payload in the B+ tree. 
+Any mismatch causes serious bugs that are difficult to track down.
 
