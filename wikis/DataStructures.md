@@ -31,7 +31,11 @@ obtained by running the iMinMax index algorithm on the N dimensional point.
 It is used as a key for later insertion into the B+ tree
 
 ```C++
-struct iminmax_data_element { string label; vector<double> point; double iminmax_index; };
+struct iminmax_data_element { 
+    string label; 
+    vector<double> point; 
+    double iminmax_index; 
+};
 ```
 
 ![iminmax_element](/images/iminmax-element.png)
@@ -49,14 +53,30 @@ vector<iminmax_data_element> iminmax_data;
 ```
 
 ![iminmax_data](/images/iminmax-data.png)
-http://iminmax.googlecode.com/git/images/iminmax-data.png
 
-Integration of iMinMax Data with the B+ tree
+## Integration of iMinMax Data with the B+ tree
 
-Each record in the source data is represented in both iminmax_data and the B+ tree. iminmax_data contains a record of the label, a vector with the point coordinates and the iminmax_index. The B+ tree contains a record of the point in key/value form where key is the iminmax_index and value is the vector index corresponding to that point in the iminmax_data vector.
+Each record in the source data is represented in both iminmax_data 
+and the B+ tree. 
+iminmax_data contains a record of the label, a vector with the 
+point coordinates and the iminmax_index. 
+The B+ tree contains a record of the point in key/value form where key 
+is the iminmax_index and value is the vector index corresponding to 
+that point in the iminmax_data vector.
 
-Since the B+ tree needs only a string and a double to represent a data element and iminmax_data needs a string, a double and a vector of doubles to represent the same element, the B+ tree tends to have a very small memory footprint relative to iminamx_data. The B+ tree then is simply a search mechanism where iminmax_data is the primary in-memory storage structure. for(i = 0; i < (long)iminmax_data.size() ; ++i){ // btree.insert(key, value) btree.insert(iminmax_data[i].iminmax_index, i); }
+Since the B+ tree needs only a string and a double to represent a 
+data element and iminmax_data needs a string, a double and a 
+vector of doubles to represent the same element, the B+ tree tends 
+to have a very small memory footprint relative to iminamx_data. 
+The B+ tree then is simply a search mechanism where iminmax_data is the 
+primary in-memory storage structure. 
 
+```C++
+for(i = 0; i < (long)iminmax_data.size() ; ++i){ 
+    // btree.insert(key, value) 
+    btree.insert(iminmax_data[i].iminmax_index, i); 
+}
+```
 http://iminmax.googlecode.com/git/images/iminmax-btree.png
 
 Note: for these data structures to work together correctly, it is essential that the vector index values in iminmax_data match up with the key/value payload in the B+ tree. Any mismatch causes serious bugs that are difficult to track down.
