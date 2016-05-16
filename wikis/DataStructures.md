@@ -34,15 +34,21 @@ It is used as a key for later insertion into the B+ tree
 struct iminmax_data_element { string label; vector<double> point; double iminmax_index; };
 ```
 
-![iMinMax Data Element](/images/iminmax-element.png)
-http://iminmax.googlecode.com/git/images/iminmax-element.png
+![iminmax_element](/images/iminmax-element.png)
 
-iminmax_data
+### iminmax_data
 
-iminmax_data is simply a vector comprised of S iminmax_data_elements where S is the size or number of points in the dtaset. Since iminmax_data_element also contains a vector, iminmax_data can be roughly thought of as a vector of vectors or a matrix
+iminmax_data is simply a vector comprised of S iminmax_data_elements 
+where S is the size or number of points in the dtaset. 
+Since iminmax_data_element also contains a vector, iminmax_data can be 
+roughly thought of 
+as a vector of vectors or a matrix
 
+```C++
 vector<iminmax_data_element> iminmax_data;
+```
 
+![iminmax_data](/images/iminmax-data.png)
 http://iminmax.googlecode.com/git/images/iminmax-data.png
 
 Integration of iMinMax Data with the B+ tree
