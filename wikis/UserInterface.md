@@ -9,7 +9,7 @@ Guidance on the proper use of the available command line arguments is
 contained in a usage function. The usage function is called if the 
 program is run with no command line arguments.
 
-```Bash
+```bash
 IMINAX INDEXING AND QUERY PROGRAM
 
 This program accepts a number of command line arguments and command
