@@ -30,7 +30,9 @@ of the point in an N dimensional space
 obtained by running the iMinMax index algorithm on the N dimensional point. 
 It is used as a key for later insertion into the B+ tree
 
+```C++
 struct iminmax_data_element { string label; vector<double> point; double iminmax_index; };
+```
 
 http://iminmax.googlecode.com/git/images/iminmax-element.png
 
