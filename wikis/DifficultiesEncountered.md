@@ -1,30 +1,57 @@
-Or, you'll never guess what happened on the way to the presentation
+# Or, you'll never guess what happened on the way to the presentation
 
-CSV Parsing
+## CSV Parsing
 
-Many scripting languages such as PHP and Python have built in or widely adopted libraries for reading and parsing CSV files. C++ has appears to have no such native libraries.
+Many scripting languages such as PHP and Python have built in or 
+widely adopted libraries for reading and parsing CSV files. 
+C++ has appears to have no such native libraries.
 
-After some searching, our best options appeared to be to use Boost libraries or to take a 'Roll your Own' approach. Parsing CSV files can be surprisingly complicate due to an abundance of optional alternate encodings, multiple methods for handling line terminations and multiple standards for handling escape characters and literal representation of escape characters. However, since our input data, is very regular, we decided to go with the simplest thing that could possibly work and Roll our Own. This helps reduce compillation dependencies and contributes to program portability.
+After some searching, our best options appeared to be to use 
+Boost libraries or to take a 'Roll your Own' approach. 
+Parsing CSV files can be surprisingly complicate due to 
+an abundance of optional alternate encodings, multiple methods for 
+handling line terminations and multiple standards for handling 
+escape characters and literal representation of escape characters. 
+However, since our input data, is very regular, we decided to go with 
+the simplest thing that could possibly work and Roll our Own. 
+This helps reduce compillation dependencies and contributes to 
+program portability.
 
-Early parsing code resembled this ``` std::vector parse_csv_gen_index(std::string datafile) { std::ifstream data(datafile.c_str()); std::string line; struct iminmax_data_element element; std::vector iminmax_data(0); int i;
+Early parsing code resembled this 
 
-while(std::getline(data,line)) { std::stringstream lineStream(line); std::string cell; // clean out the element structure element.label = ""; element.point.clear(); element.iminmax_index = 0.0;
+```C++ 
+std::vector parse_csv_gen_index(std::string datafile) { 
+    std::ifstream data(datafile.c_str()); 
+    std::string line; 
+    struct iminmax_data_element element; 
+    std::vector iminmax_data(0); 
+    int i;
 
-  // get the first column, which contains the ID
-  std::getline(lineStream,cell,',');
-  element.label = cell.c_str();
-  std::cout << "id = " << element.label << "\n";
+    while(std::getline(data,line)) { 
+        std::stringstream lineStream(line); 
+        std::string cell; 
 
-  while(std::getline(lineStream,cell,','))
-    {
-      element.point.push_back(atof(cell.c_str()));
-    } // end inner while
-  // run the iMinMax indexing algorithm
-  element.iminmax_index = gen_iminmax_index(element.point);
-  iminmax_data.push_back(element);
+        // clean out the element structure 
+        element.label = ""; 
+        element.point.clear(); 
+        element.iminmax_index = 0.0;
 
-} // end outer while
-return( iminmax_data ); }
+        // get the first column, which contains the ID
+        std::getline(lineStream,cell,',');
+        element.label = cell.c_str();
+        std::cout << "id = " << element.label << "\n";
+
+        while(std::getline(lineStream,cell,',')) {
+            element.point.push_back(atof(cell.c_str()));
+        } // end inner while
+
+        // run the iMinMax indexing algorithm
+        element.iminmax_index = gen_iminmax_index(element.point);
+        iminmax_data.push_back(element);
+
+     } // end outer while
+     return( iminmax_data ); 
+}
 
 ```
 
