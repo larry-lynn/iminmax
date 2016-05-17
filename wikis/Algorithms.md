@@ -77,6 +77,7 @@ KNN Query
 
 Below is the pseudocode for the decreasing radius KNN query with iMinMax:
 
+![iMinMax KNN Example](/images/algorithms_knn_query_pseudocode.png)
 http://iminmax.googlecode.com/git/images/algorithms_knn_query_pseudocode.png
 
 Here is an illustration of the KNN algorithm working in 2 dimensions when k = 4 and θ = -1:
