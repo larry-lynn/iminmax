@@ -153,17 +153,19 @@ into the relationship between the euclidean distance and
 iMinMax index distance
 
 ![KNN Query Execution Times](/images/knn_uniform_clustered.png)
-http://iminmax.googlecode.com/git/images/knn_uniform_clustered.png
 
-Again, the Y axis measures time saved over the sequential search. In most cases, iMinMax KNN performs better than sequential, but in some cases it performs worse. In general the iMinMax KNN query performs better as the dimensionality of the dataset increases.
+Again, the Y axis measures time saved over the sequential search. 
+In most cases, iMinMax KNN performs better than sequential, but 
+in some cases it performs worse. In general the iMinMax 
+KNN query performs better as the dimensionality of the dataset increases.
 
-iMinMax KNN Query
+### iMinMax KNN Query
 
 ./main_program --loadtf cache --qn queries/cluster_queries/cluster_256_100000_qn.txt --knn 3 Perform Query: 1 Nodes accessed for KNN query: 5540 Results: Neighbor: 50; Distance: 0 Neighbor: 8808; Distance: 0.565941 Neighbor: 7065; Distance: 0.576985 Query Time: 2703.86 ms Perform Query: 2 Nodes accessed for KNN query: 5807 Results: Neighbor: 51; Distance: 0 Neighbor: 6058; Distance: 0.561889 Neighbor: 3341; Distance: 0.577814 Query Time: 2912.45 ms Average Query Time: 2808.16 ms
 
 Note that the cout of nodes accessed is up by 3 orders of magnitude over the earlier queries. CPU time is up even more (due to the extra computational work of calculating distances). No more free lunch.
 
-iMinMax Sequential Query
+### iMinMax Sequential Query
 
 ./main_program --loadtf cache --qn queries/cluster_queries/cluster_256_100000_qn.txt --knn 3 -s Perform Query: 1 Results: Neighbor: 50; Distance: 0 Neighbor: 8808; Distance: 0.565941 Neighbor: 8541; Distance: 0.576095 Query Time: 6879.39 ms Perform Query: 2 Results: Neighbor: 51; Distance: 0 Neighbor: 6058; Distance: 0.561889 Neighbor: 3119; Distance: 0.571302 Query Time: 6879.4 ms Average Query Time: 6879.39 ms
 
