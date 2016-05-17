@@ -47,7 +47,8 @@ searched. In this case, for **d**-dimensional data,
 
 ![Range Query Equations](/images/algorithms_range_transformation.png)
 
-Basically, the three cases correspond to the three cases shown below (θ = 0 and d = 2):
+Basically, the three cases correspond to the three cases shown below 
+(θ = 0 and **d** = 2):
 
 ![Range Query Cases](/images/algorithms_range_cases.png)
 
