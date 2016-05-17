@@ -83,22 +83,44 @@ du -hc cache.*
 
 On the build server we appear to be getting an I/O speed of 8.6 MB/Sec.
 
-For this dataset, the build once, reuse many times approach costs us an extra 26 seconds (for 2 rounds of I/O on cache.tree and cache.data files) on the first build/query cycle. For every subsequent query cycle, we save 2.1 seconds in index build time; however we buy this savings at the cost of 3.4 seconds to read the serialized data structures rather than the original CSV because the serialized data is bigger than the original CSV.
+For this dataset, the build once, reuse many times approach costs us an 
+extra 26 seconds (for 2 rounds of I/O on cache.tree and cache.data files) 
+on the first build/query cycle. For every subsequent query cycle, 
+we save 2.1 seconds in index build time; however we buy this savings 
+at the cost of 3.4 seconds to read the serialized data structures 
+rather than the original CSV because the serialized data is bigger 
+than the original CSV.
 
-Let I be the cost for reading or writing the index (both serialized data structures)
-Let C be the cost of reading the original data files in CSV format.
-Let delta be I - C 
-Let q be the number of queries 
+Let **I** be the cost for reading or writing the index 
+(both serialized data structures)
+Let **C** be the cost of reading the original data files in CSV format.
+Let **delta** be **I - C** 
+Let **q** be the number of queries 
 
-The the build once, reuse many times approach costs us 2 I + q delta
+The the build once, reuse many times approach costs us **2 I + q delta**
 
-In the end, this approach costs us time and, increases program complexity and reduces program maintainability. If we were to re-do this project, we would argue against the requirement to implement this approach.
+In the end, this approach costs us time and, increases program complexity 
+and reduces program maintainability. If we were to re-do this project, 
+we would argue against the requirement to implement this approach.
 
-Memory Constraints on Performance
+### Memory Constraints on Performance
 
-As mentioned earlier, the program peaks at a memory usage of 602MB. This is not currently problematic as the build server has 2GB available. However, if the size of the data were to grow by an order of magnitude, we would have problems on our system. If it were to grow by 2 orders of magnitude, we would have problems on most other systems as well.
+As mentioned earlier, the program peaks at a memory usage of 602MB. 
+This is not currently problematic as the build server has 2GB 
+available. However, if the size of the data were to grow by an order 
+of magnitude, we would have problems on our system. If it were to grow 
+by 2 orders of magnitude, we would have problems on most other 
+systems as well.
 
-If the size of the data were unconstrained, we would need to reconsider the architecture of our program. We would probably need to do away with the giant iminmax_data vector. Also, the B+ tree that we used presumes that all elements can reside in main memory. We would need another B+ tree implementation that functioned well when only a portion of the tree could be stored in main memory. We probably need to push all of the data that we currently store in iminmax_data into the tree. This would make the size of the tree increase dramatically (2 orders of magnitude in our current worse case) and further complicate our I/O problems.
+If the size of the data were unconstrained, we would need to reconsider 
+the architecture of our program. We would probably need to do away with 
+the giant iminmax_data vector. Also, the B+ tree that we used presumes 
+that all elements can reside in main memory. We would need another B+ tree 
+implementation that functioned well when only a portion of the tree could 
+be stored in main memory. We probably need to push all of the data that 
+we currently store in iminmax_data into the tree. This would make the 
+size of the tree increase dramatically (2 orders of magnitude in 
+our current worse case) and further complicate our I/O problems.
 
 The performance impacts of making such a change would be considerable.
 
