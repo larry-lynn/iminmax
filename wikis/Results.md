@@ -1,7 +1,6 @@
 ## Index algorithm and tree build stats
 
-![Tree Creation Results](/images/index_tree_creation_results.png)
-http://iminmax.googlecode.com/git/images/index_tree_creation_results.png
+![Index and Tree Build Times](/images/index_tree_creation_results.png)
 
 Processing the input data is linearly related to both dimensionality and 
 data size. Note that these results are for CPU time only. 
@@ -29,15 +28,16 @@ Tree segments found in treeinfo.txt file
 real 0m45.758s user 0m42.827s sys 0m2.328s 
 ```
 
-Post Indexing Query Results
+## Post Indexing Query Results
 
 Unless otherwise indicated, all of these results were obtained with the 
 tunable parameter theta set to 0 both during tree build and during 
 query execution. The theta used during build and querying must 
 match or the algorithms may produce inaccurate results.
 
-Point Query Stats
+## Point Query Stats
 
+![Point Query Clustered](/images/point_uniform_clustered.png)
 http://iminmax.googlecode.com/git/images/point_uniform_clustered.png
 
 (note: uniform & clustered performance is very similar and the results are averaged together. Also, times are graphed in terms of time saved over sequential rather than absolute times)
