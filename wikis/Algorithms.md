@@ -28,7 +28,7 @@ occur for **x** and **y** when θ = 0.
 
 ![Max and Min Boundaries](/images/algorithms_index_boundaries.png)
 
-# Point Query
+## Point Query
 
 The point query simply calculates the iMinMax index of the query point, 
 follows this index in the B+-tree down to the leaves, and checks the 
@@ -37,12 +37,15 @@ dimensions of the point. The pseudocode is shown below:
 
 
 ![Point Query Pseudocode](/images/algorithms_point_query_pseudocode_resized.png)
-http://iminmax.googlecode.com/git/images/algorithms_point_query_pseudocode_resized.png
 
-Range Query
+## Range Query
 
-Similarly, range queries are also transformed before the B+-tree is searched. In this case, for d-dimensional data, d subqueries will be generated. The equation for the j th subquery is shown below:
+Similarly, range queries are also transformed before the B+-tree is 
+searched. In this case, for d-dimensional data, 
+d subqueries will be generated. The equation for the 
+j th subquery is shown below:
 
+![Range Query Pseudocode](/images/algorithms_range_transformation.png)
 http://iminmax.googlecode.com/git/images/algorithms_range_transformation.png
 
 Basically, the three cases correspond to the three cases shown below (θ = 0 and d = 2):
