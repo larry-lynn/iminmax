@@ -44,15 +44,39 @@ http://iminmax.googlecode.com/git/images/point_uniform_clustered.png
 
 The iMinMax algorithm is highly efficient for point queries. It consistently beats a sequential scan and the savings in terms of time improve dramatically as both the data dimensionality and size increases.
 
-iMinMax Point Query
+### iMinMax Point Query
 
-./main_program --loadtf cache --qp queries/cluster_queries/cluster_256_100000_qp.txt Perform point queries Perform Query: 1 Nodes accessed for point query: 5 Found: 1 ID: 50 Query Time: 0.09 ms Perform Query: 2 Nodes accessed for point query: 5 Found: 1 ID: 51 Query Time: 0.074 ms Average Query Time: 0.082 ms
+```bash
+./main_program --loadtf cache --qp queries/cluster_queries/cluster_256_100000_qp.txt 
+Perform point queries 
+Perform Query: 1 
+Nodes accessed for point query: 5 
+Found: 1 ID: 50 
+Query Time: 0.09 ms 
+Perform Query: 2 
+Nodes accessed for point query: 5 
+Found: 1 ID: 51 
+Query Time: 0.074 ms 
+Average Query Time: 0.082 ms
+```
 
-The number of nodes accessed is low, usually matching the height of the tree. Query times are correspondingly low.
+The number of nodes accessed is low, usually matching the height of 
+the tree. Query times are correspondingly low.
 
-Sequential Point Query
+### Sequential Point Query
 
-./main_program --loadtf cache --qp queries/cluster_queries/cluster_256_100000_qp.txt -s Perform point queries Perform Query: 1 Found: 1 ID: 50 Query Time: 2273.61 ms Perform Query: 2 Found: 1 ID: 51 Query Time: 2273.5 ms Average Query Time: 2273.56 ms
+```bash
+./main_program --loadtf cache --qp queries/cluster_queries/cluster_256_100000_qp.txt -s 
+Perform point queries 
+Perform Query: 1 
+Found: 1 ID: 50 
+Query Time: 2273.61 ms 
+Perform Query: 2 
+Found: 1 
+ID: 51 
+Query Time: 2273.5 ms 
+Average Query Time: 2273.56 ms
+```
 
 Sequential search uses the iminmax_data structure rather than going through the tree, so no node access counts are reported. However, the lack of the tree as an indexing structure is clearly demonstrated in the average query time. KNN Point query performs 4 orders of magnitude better in some cases.
 
