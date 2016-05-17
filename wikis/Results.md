@@ -184,7 +184,7 @@ Note that the count of nodes accessed is up by 3 orders of magnitude
 over the earlier queries. CPU time is up even more (due to the 
 extra computational work of calculating distances). No more free lunch.
 
-### iMinMax Sequential Query
+### Sequential KNN Query
 
 ```bash
 ./main_program --loadtf cache --qn queries/cluster_queries/cluster_256_100000_qn.txt --knn 3 -s 
