@@ -60,10 +60,10 @@ The range query follows 3 useful theorems:
 Theorem 1
 
 ![Range Query Theorem 1](/images/algorithms_theorem_1.png)
-http://iminmax.googlecode.com/git/images/algorithms_theorem_1.png
 
 Theorem 2
 
+![Range Query Theorem 2](/images/algorithms_theorem_2.png)
 http://iminmax.googlecode.com/git/images/algorithms_theorem_2.png
 
 Theorem 3
