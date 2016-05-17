@@ -1,18 +1,40 @@
-Index algorithm and tree build stats
+## Index algorithm and tree build stats
 
+![Tree Creation Results](/images/index_tree_creation_results.png)
 http://iminmax.googlecode.com/git/images/index_tree_creation_results.png
 
-Processing the input data is linearly related to both dimensionality and data size. Note that these results are for CPU time only. They do not include either reading the CSV data file or writing the serialized binary data structures.
+Processing the input data is linearly related to both dimensionality and 
+data size. Note that these results are for CPU time only. 
+They do not include either reading the CSV data file or writing the 
+serialized binary data structures.
 
-The IO costs are considerable, but they are beyond the scope of what we are trying to measure for this experiment. For reference purposes, the output below demonstrates how IO dominates CPU time by an order of magnitude
+The IO costs are considerable, but they are beyond the scope of what 
+we are trying to measure for this experiment. For reference purposes, 
+the output below demonstrates how 
+IO dominates CPU time by an order of magnitude
 
-``` time ./main_program -b --datafile ../../csci540_data/256Dimension10cluster100000Points.csv --savetf cache Tree Build Time: 183.564 ms Index Build Time [includes tree build time]: 2133.41 ms Tree statistics: Items:100000 Nodes:7261 Leaves:6776 InnerNodes:485 Levels:5 Average Fill:0.70276 Tree segments found in treeinfo.txt file
+```bash 
+time ./main_program -b --datafile ../../csci540_data/256Dimension10cluster100000Points.csv --savetf cache 
+Tree Build Time: 183.564 ms 
+Index Build Time [includes tree build time]: 2133.41 ms 
+Tree statistics: 
+Items:100000 
+Nodes:7261 
+Leaves:6776 
+InnerNodes:485 
+Levels:5 
+Average Fill:0.70276 
+Tree segments found in treeinfo.txt file
 
-real 0m45.758s user 0m42.827s sys 0m2.328s ```
+real 0m45.758s user 0m42.827s sys 0m2.328s 
+```
 
 Post Indexing Query Results
 
-Unless otherwise indicated, all of these results were obtained with the tunable parameter theta set to 0 both during tree build and during query execution. The theta used during build and querying must match or the algorithms may produce inaccurate results.
+Unless otherwise indicated, all of these results were obtained with the 
+tunable parameter theta set to 0 both during tree build and during 
+query execution. The theta used during build and querying must 
+match or the algorithms may produce inaccurate results.
 
 Point Query Stats
 
