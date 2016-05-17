@@ -7,20 +7,26 @@ Below are descriptions and some implementation details for the point, range, and
 To insert a data point into the B+-tree, each datapoint is first given a 
 one-dimensional index. Let **x<sub>min</sub>** be the point's minimum 
 value over 
-all the dimensions and let xmax be the point's maximum value over 
+all the dimensions and let **x<sub>max</sub>** be the point's 
+maximum value over 
 all the dimensions. Similarly, let **d<sub>min</sub>** and 
 **d<sub>max</sub>** be the 
 dimensions (integer-valued) in which **x<sub>min</sub>** and 
 **x<sub>max</sub>** occur, 
 respectively. The index is computed as follows:
 
-![Index Creation](/images/algorithms_index.png)
-http://iminmax.googlecode.com/git/images/algorithms_index.png
+![Index Creation Equation](/images/algorithms_index.png)
 
-The integer part refers to the partition (dimension) of the point's closest edge, and the decimal part refers to the position along that edge. The parameter θ controls the relative influence of the Min and Max edges and is used to account for skewed data distributions.
+The integer part refers to the partition (dimension) of the point's 
+closest edge, and the decimal part refers to the position 
+along that edge. The parameter θ controls the relative influence 
+of the **Min** and **Max** edges and is used to account for 
+skewed data distributions.
 
-The figure below shows where the Max and Min boundaries occur for x and y when θ = 0.
+The figure below shows where the **Max** and **Min** boundaries 
+occur for **x** and **y** when θ = 0.
 
+![Index Creation](/images/algorithms_index_boundaries.png)
 http://iminmax.googlecode.com/git/images/algorithms_index_boundaries.png
 
 # Point Query
