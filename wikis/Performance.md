@@ -1,16 +1,27 @@
-Disk Access
+## Disk Access
 
 The entire program is heavily I/O bound. Take the example of building the tree with one of the largest data sets
 
-``` ./main_program -b --datafile ../../csci540_data/256Dimension10cluster100000Points.csv --savetf cache Tree Build Time: 183.865 ms Index Build Time [includes tree build time]: 2121.62 ms Tree statistics: Items:100000 Nodes:7261 Leaves:6776 InnerNodes:485 Levels:5 Average Fill:0.70276 Tree segments found in treeinfo.txt file
+```bash 
+./main_program -b --datafile ../../csci540_data/256Dimension10cluster100000Points.csv --savetf cache 
+Tree Build Time: 183.865 ms 
+Index Build Time [includes tree build time]: 2121.62 ms 
+Tree statistics: 
+Items:100000 
+Nodes:7261 
+Leaves:6776 
+InnerNodes:485 
+Levels:5 
+Average Fill:0.70276 
+Tree segments found in treeinfo.txt file
+
 
 real 0m45.526s user 0m43.083s sys 0m2.268s
-
 ```
 
 Program execution takes just over 45 seconds of real time on our build server. But just over 2 seconds of that is algorithm execution time; the rest is I/O
 
-Memory
+## Memory
 
 The memory usage for the program is highest while reading the data, building the index and saving the index data structures to disk. Memory usage peaks at 602MB for the largest data sets. The program is not currently memory bound but could become so if the size of the data sets increased.
 
