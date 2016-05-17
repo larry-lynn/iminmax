@@ -50,10 +50,10 @@ searched. In this case, for **d**-dimensional data,
 Basically, the three cases correspond to the three cases shown below (θ = 0 and d = 2):
 
 ![Range Query Cases](/images/algorithms_range_cases.png)
-http://iminmax.googlecode.com/git/images/algorithms_range_cases.png
 
 The pseudocode below shows how each subquery is evaluated:
 
+![Range Query Pseudocode](/images/algorithms_range_query_pseudocode.png)
 http://iminmax.googlecode.com/git/images/algorithms_range_query_pseudocode.png
 
 The range query follows 3 useful theorems:
