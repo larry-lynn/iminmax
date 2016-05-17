@@ -7,7 +7,8 @@ Below are descriptions and some implementation details for the point, range, and
 To insert a data point into the B+-tree, each datapoint is first given a 
 one-dimensional index. Let xmin be the point's minimum value over 
 all the dimensions and let xmax be the point's maximum value over 
-all the dimensions. Similarly, let dmin and dmax be the 
+all the dimensions. Similarly, let d<sub>min</sub> and d<sub>max</sub> 
+be the 
 dimensions (integer-valued) in which xmin and xmax occur, 
 respectively. The index is computed as follows:
 
