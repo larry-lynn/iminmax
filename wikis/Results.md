@@ -38,7 +38,6 @@ match or the algorithms may produce inaccurate results.
 ## Point Query Stats
 
 ![Point Query Clustered](/images/point_uniform_clustered.png)
-http://iminmax.googlecode.com/git/images/point_uniform_clustered.png
 
 (note: uniform & clustered performance is very similar and the results are averaged together. Also, times are graphed in terms of time saved over sequential rather than absolute times)
 
@@ -78,10 +77,15 @@ Query Time: 2273.5 ms
 Average Query Time: 2273.56 ms
 ```
 
-Sequential search uses the iminmax_data structure rather than going through the tree, so no node access counts are reported. However, the lack of the tree as an indexing structure is clearly demonstrated in the average query time. KNN Point query performs 4 orders of magnitude better in some cases.
+Sequential search uses the iminmax_data structure rather than going 
+through the tree, so no node access counts are reported. 
+However, the lack of the tree as an indexing structure is 
+clearly demonstrated in the average query time. 
+KNN Point query performs 4 orders of magnitude better in some cases.
 
-Range Query Stats
+## Range Query Stats
 
+![Point Query Clustered](/images/point_uniform_clustered.png)
 http://iminmax.googlecode.com/git/images/range_uniform_clustered.png
 
 The KNN system is a good fit for hypercube shaped queries against multi-demensional data. In the general case, we can still expect a large amount of processing, especially if the query is such that it causes a dimensionality explosion. However, our results benefit from the character of the range queries that were provided. For the most part, the start and end points of the range query differ in only one dimension.
