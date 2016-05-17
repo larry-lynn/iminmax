@@ -45,10 +45,11 @@ searched. In this case, for **d**-dimensional data,
 **d** subqueries will be generated. The equation for the 
 **j**<sub>th</sub> subquery is shown below:
 
-![Range Query Equation](/images/algorithms_range_transformation.png)
+![Range Query Equations](/images/algorithms_range_transformation.png)
 
 Basically, the three cases correspond to the three cases shown below (θ = 0 and d = 2):
 
+![Range Query Cases](/images/algorithms_range_cases.png)
 http://iminmax.googlecode.com/git/images/algorithms_range_cases.png
 
 The pseudocode below shows how each subquery is evaluated:
