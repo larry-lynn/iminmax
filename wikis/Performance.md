@@ -92,10 +92,10 @@ rather than the original CSV because the serialized data is bigger
 than the original CSV.
 
 Let **I** be the cost for reading or writing the index 
-(both serialized data structures)
-Let **C** be the cost of reading the original data files in CSV format.
-Let **delta** be **I - C** 
-Let **q** be the number of queries 
+(both serialized data structures)  
+Let **C** be the cost of reading the original data files in CSV format.  
+Let **delta** be **I - C**  
+Let **q** be the number of queries   
 
 The the build once, reuse many times approach costs us **2 I + q delta**
 
