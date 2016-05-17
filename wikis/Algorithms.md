@@ -1,11 +1,17 @@
-iMinMax Algorithms
+# iMinMax Algorithms
 
 Below are descriptions and some implementation details for the point, range, and KNN queries in iMinMax.
 
-Index Creation
+## Index Creation
 
-To insert a data point into the B+-tree, each datapoint is first given a one-dimensional index. Let xmin be the point's minimum value over all the dimensions and let xmax be the point's maximum value over all the dimensions. Similarly, let dmin and dmax be the dimensions (integer-valued) in which xmin and xmax occur, respectively. The index is computed as follows:
+To insert a data point into the B+-tree, each datapoint is first given a 
+one-dimensional index. Let xmin be the point's minimum value over 
+all the dimensions and let xmax be the point's maximum value over 
+all the dimensions. Similarly, let dmin and dmax be the 
+dimensions (integer-valued) in which xmin and xmax occur, 
+respectively. The index is computed as follows:
 
+![Index Creation](/images/algorithms_index.png)
 http://iminmax.googlecode.com/git/images/algorithms_index.png
 
 The integer part refers to the partition (dimension) of the point's closest edge, and the decimal part refers to the position along that edge. The parameter Î¸ controls the relative influence of the Min and Max edges and is used to account for skewed data distributions.
@@ -14,7 +20,7 @@ The figure below shows where the Max and Min boundaries occur for x and y when Î
 
 http://iminmax.googlecode.com/git/images/algorithms_index_boundaries.png
 
-Point Query
+# Point Query
 
 The point query simply calculates the iMinMax index of the query point, follows this index in the B+-tree down to the leaves, and checks the points of all matching index values for an exact match on all dimensions of the point. The pseudocode is shown below:
 
