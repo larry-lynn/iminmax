@@ -41,12 +41,11 @@ dimensions of the point. The pseudocode is shown below:
 ## Range Query
 
 Similarly, range queries are also transformed before the B+-tree is 
-searched. In this case, for d-dimensional data, 
-d subqueries will be generated. The equation for the 
-j th subquery is shown below:
+searched. In this case, for **d**-dimensional data, 
+**d** subqueries will be generated. The equation for the 
+**j**<sub>th</sub> subquery is shown below:
 
-![Range Query Pseudocode](/images/algorithms_range_transformation.png)
-http://iminmax.googlecode.com/git/images/algorithms_range_transformation.png
+![Range Query Equation](/images/algorithms_range_transformation.png)
 
 Basically, the three cases correspond to the three cases shown below (θ = 0 and d = 2):
 
