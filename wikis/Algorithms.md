@@ -54,12 +54,12 @@ Basically, the three cases correspond to the three cases shown below (θ = 0 and
 The pseudocode below shows how each subquery is evaluated:
 
 ![Range Query Pseudocode](/images/algorithms_range_query_pseudocode.png)
-http://iminmax.googlecode.com/git/images/algorithms_range_query_pseudocode.png
 
 The range query follows 3 useful theorems:
 
 Theorem 1
 
+![Range Query Theorem 1](/images/algorithms_theorem_1.png)
 http://iminmax.googlecode.com/git/images/algorithms_theorem_1.png
 
 Theorem 2
