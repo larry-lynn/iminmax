@@ -126,14 +126,32 @@ Query time is correspondingly low.
 
 ### Sequential Range Query
 
-./main_program --loadtf cache --qr queries/cluster_queries/cluster_256_100000_qrw.txt -s Perform Query: 1 Found: 1 ID: 50 Query Time: 3053.97 ms Perform Query: 2 Found: 1 ID: 51 Query Time: 3048.18 ms Average Query Time: 3051.07 ms
+```bash
+./main_program --loadtf cache --qr queries/cluster_queries/cluster_256_100000_qrw.txt -s 
+Perform Query: 1 
+Found: 1 
+ID: 50 
+Query Time: 3053.97 ms 
+Perform Query: 2 
+Found: 1 
+ID: 51 
+Query Time: 3048.18 ms 
+Average Query Time: 3051.07 ms
 
-Given the queries we've been instructed to run, beating the sequential search is like shooting fish in a barrel. Again, we are getting a performance increase of up to 4 orders of magnitude.
+Given the queries we've been instructed to run, beating the 
+sequential search is like shooting fish in a barrel. 
+Again, we are getting a performance increase of up to 
+4 orders of magnitude.
 
-KNN Query Stats
+### KNN Query Stats
 
-The KNN queries are perhaps our most interesting results (short of the extensions). iMinMax is really not optimized for KNN, but extensions have been added to it based on insights into the relationship between the euclidean distance and iMinMax index distance
+The KNN queries are perhaps our most interesting results 
+(short of the extensions). iMinMax is really not optimized for 
+KNN, but extensions have been added to it based on insights 
+into the relationship between the euclidean distance and 
+iMinMax index distance
 
+![KNN Query Execution Times](/images/knn_uniform_clustered.png)
 http://iminmax.googlecode.com/git/images/knn_uniform_clustered.png
 
 Again, the Y axis measures time saved over the sequential search. In most cases, iMinMax KNN performs better than sequential, but in some cases it performs worse. In general the iMinMax KNN query performs better as the dimensionality of the dataset increases.
