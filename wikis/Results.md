@@ -137,6 +137,7 @@ Found: 1
 ID: 51 
 Query Time: 3048.18 ms 
 Average Query Time: 3051.07 ms
+```
 
 Given the queries we've been instructed to run, beating the 
 sequential search is like shooting fish in a barrel. 
