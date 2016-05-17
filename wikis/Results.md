@@ -88,6 +88,7 @@ KNN Point query performs 4 orders of magnitude better in some cases.
 ![Range Query Execution Times](/images/range_uniform_clustered.png)
 http://iminmax.googlecode.com/git/images/range_uniform_clustered.png
 
+
 The KNN system is a good fit for hypercube shaped queries against 
 multi-demensional data. In the general case, we can still expect a 
 large amount of processing, especially if the query is such that it 
