@@ -1,6 +1,7 @@
 ## Disk Access
 
-The entire program is heavily I/O bound. Take the example of building the tree with one of the largest data sets
+The entire program is heavily I/O bound. Take the 
+example of building the tree with one of the largest data sets
 
 ```bash 
 ./main_program -b --datafile ../../csci540_data/256Dimension10cluster100000Points.csv --savetf cache 
@@ -19,35 +20,63 @@ Tree segments found in treeinfo.txt file
 real 0m45.526s user 0m43.083s sys 0m2.268s
 ```
 
-Program execution takes just over 45 seconds of real time on our build server. But just over 2 seconds of that is algorithm execution time; the rest is I/O
+Program execution takes just over 45 seconds of real time on our 
+build server. But just over 2 seconds of that is algorithm 
+execution time; the rest is I/O
 
 ## Memory
 
-The memory usage for the program is highest while reading the data, building the index and saving the index data structures to disk. Memory usage peaks at 602MB for the largest data sets. The program is not currently memory bound but could become so if the size of the data sets increased.
+The memory usage for the program is highest while reading the data, 
+building the index and saving the index data structures to disk. 
+Memory usage peaks at 602MB for the largest data sets. The program is 
+not currently memory bound but could become so if the size of the data 
+sets increased.
 
-CPU
+## CPU
 
-The program is serial rather than parallel and can easily max out the capabilities of a single CPU (or a single core of a multicore machine). This is not currently problematic as the bottlenecks are elsewhere
+The program is serial rather than parallel and can easily max out the 
+capabilities of a single CPU (or a single core of a multicore machine). 
+This is not currently problematic as the bottlenecks are elsewhere.
 
-Observations
+## Observations
 
-All datasets, All queries
+### All datasets, All queries
 
-On the build server, to process all data files and execute all queries in all query files, the current cost in real-time is
+On the build server, to process all data files and execute all queries 
+in all query files, the current cost in real-time is
 
 4 minutes 38 seconds
 
-We serialize the 2 main data structures and save them to disk within the index build mode. This is intended to save resources and real execution time preserving the work of building the tree and the index. This turns out to be unhelpful for our algorithm.
+We serialize the 2 main data structures and save them to disk 
+within the index build mode. This is intended to save resources and 
+real execution time preserving the work of building the tree and 
+the index. This turns out to be unhelpful for our algorithm.
 
-Size of Serialized Data
+### Size of Serialized Data
 
-The size of the serialized binary structures is larger on disk than the original CSV files. The increase in required disk space and resulting I/0 penalty is around 18%.
+The size of the serialized binary structures is larger on disk than the 
+original CSV files. The increase in required disk space and 
+resulting I/0 penalty is around 18%.
 
-``` du -hc ../../csci540_data/256Dimension10cluster100000Points.csv 169M ../../csci540_data/256Dimension10cluster100000Points.csv 169M total
+```bash 
+du -hc ../../csci540_data/256Dimension10cluster100000Points.csv 
+169M ../../csci540_data/256Dimension10cluster100000Points.csv 
+169M total
 
-./main_program -b --datafile ../../csci540_data/256Dimension10cluster100000Points.csv --savetf cache Tree Build Time: 184.341 ms Index Build Time [includes tree build time]: 2119.85 ms Tree statistics: Items:100000 Nodes:7261 Leaves:6776 InnerNodes:485 Levels:5 Average Fill:0.70276 Tree segments found in treeinfo.txt file
+./main_program -b --datafile ../../csci540_data/256Dimension10cluster100000Points.csv --savetf cache 
+Tree Build Time: 184.341 ms 
+Index Build Time [includes tree build time]: 2119.85 ms 
+Tree statistics: 
+Items:100000 
+Nodes:7261 
+Leaves:6776 
+InnerNodes:485 
+Levels:5 
+Average Fill:0.70276 
+Tree segments found in treeinfo.txt file
 
-du -hc cache.* 197M cache.data 1.9M cache.tree 199M total ```
+du -hc cache.* 197M cache.data 1.9M cache.tree 199M total 
+```
 
 On the build server we appear to be getting an I/O speed of 8.6 MB/Sec.
 
