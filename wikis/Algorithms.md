@@ -64,10 +64,10 @@ Theorem 1
 Theorem 2
 
 ![Range Query Theorem 2](/images/algorithms_theorem_2.png)
-http://iminmax.googlecode.com/git/images/algorithms_theorem_2.png
 
 Theorem 3
 
+![Range Query Theorem 3](/images/algorithms_theorem_3.png)
 http://iminmax.googlecode.com/git/images/algorithms_theorem_3.png
 
 Below is an example of how the range query works in 2 dimensions:
