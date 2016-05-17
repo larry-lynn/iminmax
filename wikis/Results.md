@@ -85,16 +85,27 @@ KNN Point query performs 4 orders of magnitude better in some cases.
 
 ## Range Query Stats
 
-![Point Query Clustered](/images/point_uniform_clustered.png)
+![Range Query Execution Times](/images/range_uniform_clustered.png)
 http://iminmax.googlecode.com/git/images/range_uniform_clustered.png
 
-The KNN system is a good fit for hypercube shaped queries against multi-demensional data. In the general case, we can still expect a large amount of processing, especially if the query is such that it causes a dimensionality explosion. However, our results benefit from the character of the range queries that were provided. For the most part, the start and end points of the range query differ in only one dimension.
+The KNN system is a good fit for hypercube shaped queries against 
+multi-demensional data. In the general case, we can still expect a 
+large amount of processing, especially if the query is such that it 
+causes a dimensionality explosion. However, our results benefit from the 
+character of the range queries that were provided. For the most part, 
+the start and end points of the range query differ in only one dimension.
 
-The nature of the queries allows the auxiliary theorems of the KNN range algorithm to have a dramatic effect and substantially prune down the number of sub-queries that need to be performed an consequently the number of tree nodes that must be accessed.
+The nature of the queries allows the auxiliary theorems of the 
+KNN range algorithm to have a dramatic effect and substantially 
+prune down the number of sub-queries that need to be performed 
+an consequently the number of tree nodes that must be accessed.
 
-Sub-query pruning leads to excellent performance on range queries. However, we believe that this sort of performance is an accident inherent in the nature of the query input files and cannot be expected in the general case.
+Sub-query pruning leads to excellent performance on range queries. 
+However, we believe that this sort of performance is an accident 
+inherent in the nature of the query input files and cannot be 
+expected in the general case.
 
-iMinMax Range Query
+### iMinMax Range Query
 
 ./main_program --loadtf cache --qr queries/cluster_queries/cluster_256_100000_qrw.txt Perform Query: 1 Nodes accessed by range query: 5 Found: 1 ID: 50 Query Time: 0.363 ms Perform Query: 2 Nodes accessed by range query: 5 Found: 1 ID: 51 Query Time: 0.11 ms Average Query Time: 0.2365 ms
 
