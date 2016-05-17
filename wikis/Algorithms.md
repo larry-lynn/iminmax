@@ -26,13 +26,17 @@ skewed data distributions.
 The figure below shows where the **Max** and **Min** boundaries 
 occur for **x** and **y** when θ = 0.
 
-![Index Creation](/images/algorithms_index_boundaries.png)
-http://iminmax.googlecode.com/git/images/algorithms_index_boundaries.png
+![Max and Min Boundaries](/images/algorithms_index_boundaries.png)
 
 # Point Query
 
-The point query simply calculates the iMinMax index of the query point, follows this index in the B+-tree down to the leaves, and checks the points of all matching index values for an exact match on all dimensions of the point. The pseudocode is shown below:
+The point query simply calculates the iMinMax index of the query point, 
+follows this index in the B+-tree down to the leaves, and checks the 
+points of all matching index values for an exact match on all 
+dimensions of the point. The pseudocode is shown below:
 
+
+![Point Query Pseudocode](/images/algorithms_point_query_pseudocode_resized.png)
 http://iminmax.googlecode.com/git/images/algorithms_point_query_pseudocode_resized.png
 
 Range Query
