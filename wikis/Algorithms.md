@@ -5,11 +5,13 @@ Below are descriptions and some implementation details for the point, range, and
 ## Index Creation
 
 To insert a data point into the B+-tree, each datapoint is first given a 
-one-dimensional index. Let xmin be the point's minimum value over 
+one-dimensional index. Let **x<sub>min</sub>** be the point's minimum 
+value over 
 all the dimensions and let xmax be the point's maximum value over 
-all the dimensions. Similarly, let d<sub>min</sub> and d<sub>max</sub> 
-be the 
-dimensions (integer-valued) in which xmin and xmax occur, 
+all the dimensions. Similarly, let **d<sub>min</sub>** and 
+**d<sub>max</sub>** be the 
+dimensions (integer-valued) in which **x<sub>min</sub>** and 
+**x<sub>max</sub>** occur, 
 respectively. The index is computed as follows:
 
 ![Index Creation](/images/algorithms_index.png)
