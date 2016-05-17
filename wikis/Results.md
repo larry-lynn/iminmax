@@ -86,7 +86,6 @@ KNN Point query performs 4 orders of magnitude better in some cases.
 ## Range Query Stats
 
 ![Range Query Execution Times](/images/range_uniform_clustered.png)
-http://iminmax.googlecode.com/git/images/range_uniform_clustered.png
 
 
 The KNN system is a good fit for hypercube shaped queries against 
@@ -108,11 +107,24 @@ expected in the general case.
 
 ### iMinMax Range Query
 
-./main_program --loadtf cache --qr queries/cluster_queries/cluster_256_100000_qrw.txt Perform Query: 1 Nodes accessed by range query: 5 Found: 1 ID: 50 Query Time: 0.363 ms Perform Query: 2 Nodes accessed by range query: 5 Found: 1 ID: 51 Query Time: 0.11 ms Average Query Time: 0.2365 ms
+```bash
+./main_program --loadtf cache --qr queries/cluster_queries/cluster_256_100000_qrw.txt 
+Perform Query: 1 
+Nodes accessed by range query: 5 
+Found: 1 
+ID: 50 
+Query Time: 0.363 ms 
+Perform Query: 2 
+Nodes accessed by range query: 5 
+Found: 1 ID: 51 
+Query Time: 0.11 ms 
+Average Query Time: 0.2365 ms
+```
+Again, the number of nodes accessed is extremely low. 
+We believe this is due to sub-query pruning. 
+Query time is correspondingly low.
 
-Again, the number of nodes accessed is extremely low. We believe this is due to sub-query pruning. Query time is correspondingly low.
-
-Sequential Range Query
+### Sequential Range Query
 
 ./main_program --loadtf cache --qr queries/cluster_queries/cluster_256_100000_qrw.txt -s Perform Query: 1 Found: 1 ID: 50 Query Time: 3053.97 ms Perform Query: 2 Found: 1 ID: 51 Query Time: 3048.18 ms Average Query Time: 3051.07 ms
 
