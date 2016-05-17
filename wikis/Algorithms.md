@@ -57,15 +57,15 @@ The pseudocode below shows how each subquery is evaluated:
 
 The range query follows 3 useful theorems:
 
-Theorem 1
+### Theorem 1
 
 ![Range Query Theorem 1](/images/algorithms_theorem_1.png)
 
-Theorem 2
+### Theorem 2
 
 ![Range Query Theorem 2](/images/algorithms_theorem_2.png)
 
-Theorem 3
+### Theorem 3
 
 ![Range Query Theorem 3](/images/algorithms_theorem_3.png)
 
@@ -73,7 +73,7 @@ Below is an example of how the range query works in 2 dimensions:
 
 ![Range Query 2 Dimensional Example](/images/range-query-theta-0-v3.png)
 
-KNN Query
+## KNN Query
 
 Below is the pseudocode for the decreasing radius KNN query with iMinMax:
 
@@ -82,6 +82,5 @@ Below is the pseudocode for the decreasing radius KNN query with iMinMax:
 Here is an illustration of the KNN algorithm working in 2 dimensions when k = 4 and θ = -1:
 
 ![iMinMax KNN Example](/images/algorithms_knn_example.png)
-http://iminmax.googlecode.com/git/images/algorithms_knn_example.png
 
 
