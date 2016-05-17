@@ -75,7 +75,10 @@ Levels:5
 Average Fill:0.70276 
 Tree segments found in treeinfo.txt file
 
-du -hc cache.* 197M cache.data 1.9M cache.tree 199M total 
+du -hc cache.* 
+197M cache.data 
+1.9M cache.tree 
+199M total 
 ```
 
 On the build server we appear to be getting an I/O speed of 8.6 MB/Sec.
