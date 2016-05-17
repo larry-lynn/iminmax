@@ -68,11 +68,10 @@ Theorem 2
 Theorem 3
 
 ![Range Query Theorem 3](/images/algorithms_theorem_3.png)
-http://iminmax.googlecode.com/git/images/algorithms_theorem_3.png
 
 Below is an example of how the range query works in 2 dimensions:
 
-http://iminmax.googlecode.com/git/images/range-query-theta-0-v3.png
+![Range Query 2 Dimensional Example](/images/range-query-theta-0-v3.png)
 
 KNN Query
 
